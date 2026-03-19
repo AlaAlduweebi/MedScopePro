@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:button="clr-namespace:ProMedScope.Controls._Elements.Button;assembly=ProMedScope.Controls"
+                    xmlns:checkBox="clr-namespace:ProMedScope.Controls._Elements.CheckBox;assembly=ProMedScope.Controls"
+                    xmlns:comboBox="clr-namespace:ProMedScope.Controls._Elements.ComboBox;assembly=ProMedScope.Controls"
+                    xmlns:contentControl="clr-namespace:ProMedScope.Controls._Elements.ContentControl;assembly=ProMedScope.Controls"
+                    xmlns:contextMenu="clr-namespace:ProMedScope.Controls._Elements.ContextMenu;assembly=ProMedScope.Controls"
+                    xmlns:listBox="clr-namespace:ProMedScope.Controls._Elements.ListBox;assembly=ProMedScope.Controls"
+                    xmlns:listView="clr-namespace:ProMedScope.Controls._Elements.ListView;assembly=ProMedScope.Controls"
+                    xmlns:scrollViewer="clr-namespace:ProMedScope.Controls._Elements.ScrollViewer;assembly=ProMedScope.Controls"
+                    xmlns:tabControlTabItem="clr-namespace:ProMedScope.Controls._Elements.TabControl.TabItem;assembly=ProMedScope.Controls"
+                    xmlns:tabControl="clr-namespace:ProMedScope.Controls._Elements.TabControl;assembly=ProMedScope.Controls"
+                    xmlns:textBlock="clr-namespace:ProMedScope.Controls._Elements.TextBlock;assembly=ProMedScope.Controls"
+                    xmlns:textBox="clr-namespace:ProMedScope.Controls._Elements.TextBox;assembly=ProMedScope.Controls"
+                    xmlns:toggleButton="clr-namespace:ProMedScope.Controls._Elements.ToggleButton;assembly=ProMedScope.Controls"
+                    >
+
+    <!-- Elements -->
+    <Style TargetType="{x:Type button:PmButton}" BasedOn="{StaticResource ButtonStyle}" />
+    <Style TargetType="{x:Type checkBox:PmCheckBox}" BasedOn="{StaticResource CheckBoxStyle}" />
+    <Style TargetType="{x:Type comboBox:PmComboBox}" BasedOn="{StaticResource ComboBoxStyle}" />
+    <Style TargetType="{x:Type contentControl:PmContentControl}" BasedOn="{StaticResource ContentControlStyle}" />
+    <Style TargetType="{x:Type contextMenu:PmContextMenu}" BasedOn="{StaticResource ContextMenuStyle}" />
+    <Style TargetType="{x:Type listBox:PmListBox}" BasedOn="{StaticResource ListBoxStyle}" />
+    <Style TargetType="{x:Type listView:PmListView}" BasedOn="{StaticResource ListViewStyle}" />
+    <Style TargetType="{x:Type scrollViewer:PmScrollViewer}" BasedOn="{StaticResource ScrollViewerStyle}" />
+    <Style TargetType="{x:Type tabControlTabItem:PmTabControlTabItem}" BasedOn="{StaticResource TabControlTabItemStyle}" />
+    <Style TargetType="{x:Type tabControl:PmTabControl}" BasedOn="{StaticResource TabControlStyle}" />
+    <Style TargetType="{x:Type textBlock:PmTextBlock}" BasedOn="{StaticResource TextBlockStyle}" />
+    <Style TargetType="{x:Type textBox:PmTextBox}" BasedOn="{StaticResource TextBoxStyle}" />
+    <Style TargetType="{x:Type toggleButton:PmToggleButton}" BasedOn="{StaticResource ToggleButtonStyle}" />
+
+</ResourceDictionary>

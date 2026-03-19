@@ -9,11 +9,12 @@
         <ResourceDictionary Source="/_Elements/Button/ButtonStyle.xaml" />
         <ResourceDictionary Source="/_Elements/ToggleButton/ToggleButtonStyle.xaml" />
         <ResourceDictionary Source="/_Elements/TextBox/TextBoxStyle.xaml" />
+        <ResourceDictionary Source="/_Elements/ComboBox/ComboBoxStyle.xaml" />
         <ResourceDictionary Source="/_Elements/ListBox/ListBoxStyle.xaml" />
         <ResourceDictionary Source="/_Elements/ContextMenu/ContextMenuStyle.xaml" />
         <ResourceDictionary Source="/_Elements/ScrollViewer/ScrollViewerStyle.xaml" />
         <ResourceDictionary Source="/_Elements/ListView/ListViewStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/TabControl/TabItem/TabItemStyle.xaml" />
+        <ResourceDictionary Source="/_Elements/TabControl/TabItem/TabControlTabItemStyle.xaml" />
         <ResourceDictionary Source="/_Elements/TabControl/TabControlStyle.xaml" />
         <ResourceDictionary Source="/_Elements/ContentControl/ContentControlStyle.xaml" />
         
