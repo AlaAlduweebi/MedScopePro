@@ -1,4 +1,4 @@
-﻿namespace ProMedScope.Controls._Elements.PmComboBox;
+﻿namespace ProMedScope.Controls._Elements.ComboBox;
 
 /// <summary>
 /// Benutzerdefinierte PmComboBox.

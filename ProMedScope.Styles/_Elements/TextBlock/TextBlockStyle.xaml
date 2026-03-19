@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:textBlock="clr-namespace:ProMedScope.Controls._Elements.TextBlock;assembly=ProMedScope.Controls">
+
+    <!-- TextBlockStyle -->
+    <Style x:Key="TextBlockStyle" TargetType="{x:Type textBlock:PmTextBlock}">
+        <Setter Property="Background" Value="White" />
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+</ResourceDictionary>
