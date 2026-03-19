@@ -12,8 +12,7 @@
                     xmlns:tabControl="clr-namespace:ProMedScope.Controls._Elements.TabControl;assembly=ProMedScope.Controls"
                     xmlns:textBlock="clr-namespace:ProMedScope.Controls._Elements.TextBlock;assembly=ProMedScope.Controls"
                     xmlns:textBox="clr-namespace:ProMedScope.Controls._Elements.TextBox;assembly=ProMedScope.Controls"
-                    xmlns:toggleButton="clr-namespace:ProMedScope.Controls._Elements.ToggleButton;assembly=ProMedScope.Controls"
-                    >
+                    xmlns:toggleButton="clr-namespace:ProMedScope.Controls._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
     <!-- Elements -->
     <Style TargetType="{x:Type button:PmButton}" BasedOn="{StaticResource ButtonStyle}" />

@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProMedScope.Styles\ProMedScope.Styles.csproj" />
+    <ProjectReference Include="..\ProMedScope.Templates\ProMedScope.Templates.csproj" />
+  </ItemGroup>
+
 </Project>

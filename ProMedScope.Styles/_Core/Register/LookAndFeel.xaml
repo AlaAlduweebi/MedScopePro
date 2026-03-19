@@ -4,19 +4,23 @@
     <ResourceDictionary.MergedDictionaries>
 
         <!-- Elements -->
-        <ResourceDictionary Source="/_Elements/TextBlock/TextBlockStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/CheckBox/CheckBoxStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/Button/ButtonStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/ToggleButton/ToggleButtonStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/TextBox/TextBoxStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/ComboBox/ComboBoxStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/ListBox/ListBoxStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/ContextMenu/ContextMenuStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/ScrollViewer/ScrollViewerStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/ListView/ListViewStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/TabControl/TabItem/TabControlTabItemStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/TabControl/TabControlStyle.xaml" />
-        <ResourceDictionary Source="/_Elements/ContentControl/ContentControlStyle.xaml" />
-        
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/TextBlock/TextBlockStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/CheckBox/CheckBoxStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/Button/ButtonStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ToggleButton/ToggleButtonStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/TextBox/TextBoxStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ComboBox/ComboBoxStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ListBox/ListBoxStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ContextMenu/ContextMenuStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ScrollViewer/ScrollViewerStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ListView/ListViewStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/TabControl/TabItem/TabControlTabItemStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/TabControl/TabControlStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ContentControl/ContentControlStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/MainView/MainViewStyle.xaml" />
+
+        <!-- MainView -->
+        <ResourceDictionary Source="/ProMedScope.Templates;component/MainView/MainViewTemplate.xaml" />
+
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
