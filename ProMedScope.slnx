@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="ProMedScope.Controls/ProMedScope.Controls.csproj" Id="c6fd84a8-c4fa-4a24-b672-011d72232cad" />
+  <Project Path="ProMedScope.Styles/ProMedScope.Styles.csproj" Id="50740e31-056b-4885-a156-e41a82520997" />
   <Project Path="ProMedScope/ProMedScope.csproj" />
 </Solution>
