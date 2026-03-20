@@ -1,5 +1,4 @@
 ﻿using ProMedScope.Controls._Elements.ContentControl;
-using ProMedScope.Controls.Icon;
 using System.Windows.Media;
 using System.Windows;
 

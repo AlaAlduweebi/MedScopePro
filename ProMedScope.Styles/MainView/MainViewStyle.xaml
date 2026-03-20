@@ -9,7 +9,8 @@
         <Setter Property="ResizeMode" Value="CanResizeWithGrip"/>
         <Setter Property="MinHeight" Value="340"/>
         <Setter Property="MinWidth" Value="400"/>
-        <Setter Property="FontSize" Value="11"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
         <Setter Property="FontFamily" Value="Calibri"/>
         <Setter Property="Background" Value="White"/>
         <Setter Property="Foreground" Value="Black"/>
