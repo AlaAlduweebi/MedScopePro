@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:titleBar="clr-namespace:ProMedScope.Controls.TitleBar;assembly=ProMedScope.Controls">
+
+    <!-- TitleBarTemplate -->
+    <ControlTemplate x:Key="TitleBarTemplate" TargetType="{x:Type titleBar:PmTitleBar}">
+        <Border Background="White">
+
+        </Border>
+    </ControlTemplate>
+</ResourceDictionary>

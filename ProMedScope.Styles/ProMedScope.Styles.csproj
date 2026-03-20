@@ -18,4 +18,8 @@
     <ProjectReference Include="..\ProMedScope.Controls\ProMedScope.Controls.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TitleBar\" />
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,13 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:titleBar="clr-namespace:ProMedScope.Controls.TitleBar;assembly=ProMedScope.Controls"
                     xmlns:mainView="clr-namespace:ProMedScope.Controls.MainView;assembly=ProMedScope.Controls">
 
+    <!-- TitleBar -->
+    <Style TargetType="{x:Type titleBar:PmTitleBar}">
+        <Setter Property="Template" Value="{DynamicResource TitleBarTemplate}" />
+    </Style>
+    
     <!-- MainView -->
     <Style TargetType="{x:Type mainView:PmMainView}">
         <Setter Property="Template" Value="{DynamicResource MainViewTemplate}" />

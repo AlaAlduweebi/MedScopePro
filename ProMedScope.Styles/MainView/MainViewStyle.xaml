@@ -14,6 +14,7 @@
         <Setter Property="Background" Value="White"/>
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="WindowState" Value="Maximized"/>
         <Setter Property="WindowChrome.WindowChrome">
             <Setter.Value>
                 <WindowChrome CaptionHeight="0" ResizeBorderThickness="2"/>

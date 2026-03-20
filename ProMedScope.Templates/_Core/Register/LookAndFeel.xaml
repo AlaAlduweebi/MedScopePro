@@ -3,6 +3,9 @@
 
     <ResourceDictionary.MergedDictionaries>
 
+        <!-- TitleBar -->
+        <ResourceDictionary Source="/ProMedScope.Templates;component/TitleBar/TitleBarTemplate.xaml" />
+        
         <!-- MainView -->
         <ResourceDictionary Source="/ProMedScope.Templates;component/MainView/MainViewTemplate.xaml" />
 
