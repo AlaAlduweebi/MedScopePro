@@ -3,6 +3,8 @@
                     xmlns:mainView="clr-namespace:ProMedScope.Controls.MainView;assembly=ProMedScope.Controls">
 
     <!-- MainView -->
-    <Style TargetType="{x:Type mainView:PmMainView}" BasedOn="{StaticResource MainViewTemplate}" />
-
+    <Style TargetType="{x:Type mainView:PmMainView}">
+        <Setter Property="Template" Value="{DynamicResource MainViewTemplate}" />
+    </Style>
+    
 </ResourceDictionary>

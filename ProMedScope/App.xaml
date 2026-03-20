@@ -7,7 +7,9 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/ProMedScope.Styles;component/_Core/Register/LookAndFeel.xaml" />
+                <ResourceDictionary Source="/ProMedScope.Styles;component/_Core/Register/TargetTypes.xaml" />
                 <ResourceDictionary Source="/ProMedScope.Templates;component/_Core/Register/LookAndFeel.xaml" />
+                <ResourceDictionary Source="/ProMedScope.Templates;component/_Core/Register/TargetTypes.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

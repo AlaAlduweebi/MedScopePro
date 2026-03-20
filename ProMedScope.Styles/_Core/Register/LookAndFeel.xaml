@@ -20,7 +20,7 @@
         <ResourceDictionary Source="/ProMedScope.Styles;component/MainView/MainViewStyle.xaml" />
 
         <!-- MainView -->
-        <ResourceDictionary Source="/ProMedScope.Templates;component/MainView/MainViewTemplate.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/MainView/MainViewStyle.xaml" />
 
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

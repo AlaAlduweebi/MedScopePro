@@ -1,11 +1,13 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:mainView="clr-namespace:ProMedScope.Controls.MainView;assembly=ProMedScope.Controls">
+                    xmlns:mainView="clr-namespace:ProMedScope.Controls.MainView;assembly=ProMedScope.Controls"
+                    xmlns:button="clr-namespace:ProMedScope.Controls._Elements.Button;assembly=ProMedScope.Controls">
 
     <!-- MainViewTemplate -->
     <ControlTemplate x:Key="MainViewTemplate" TargetType="{x:Type mainView:PmMainView}">
         <Grid>
 
+            <button:PmButton Content="test"/>
         </Grid>
     </ControlTemplate>
 </ResourceDictionary>
