@@ -4,8 +4,22 @@
 
     <!-- TitleBarTemplate -->
     <ControlTemplate x:Key="TitleBarTemplate" TargetType="{x:Type titleBar:PmTitleBar}">
-        <Border Background="White">
+        <Border Background="White"
+                Padding="30,0,30,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
+                <!-- TitleBarLogo -->
+                <Image Grid.Column="0"
+                       x:Name="TitleBarLogo"
+                       Source="/ProMedScope.Styles;component/_Core/Resources/Images/TitleBarLogo.png"
+                       Height="120"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"/>
+            </Grid>
         </Border>
     </ControlTemplate>
 </ResourceDictionary>

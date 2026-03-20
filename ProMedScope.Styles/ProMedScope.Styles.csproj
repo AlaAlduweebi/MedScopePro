@@ -22,4 +22,8 @@
     <Folder Include="TitleBar\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Resource Include="_Core\Resources\Images\TitleBarLogo.png" />
+  </ItemGroup>
+
 </Project>
