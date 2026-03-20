@@ -1,6 +1,6 @@
 ﻿using ProMedScope.Controls._Elements.ContentControl;
 
-namespace ProMedScope.Controls.TitleBar;
+namespace ProMedScope.Controls.Icon;
 
 /// <summary>
 /// Benutzerdefiniertes Icon.

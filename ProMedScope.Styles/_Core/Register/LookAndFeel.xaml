@@ -3,6 +3,9 @@
 
     <ResourceDictionary.MergedDictionaries>
 
+        <!-- Icon -->
+        <ResourceDictionary Source="/ProMedScope.Styles;component/Icon/IconStyle.xaml" />
+        
         <!-- Elements -->
         <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/TextBlock/TextBlockStyle.xaml" />
         <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/CheckBox/CheckBoxStyle.xaml" />
