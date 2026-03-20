@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:titleBar="clr-namespace:ProMedScope.Controls.TitleBar;assembly=ProMedScope.Controls">
+                    xmlns:titleBar="clr-namespace:ProMedScope.Controls.TitleBar;assembly=ProMedScope.Controls"
+                    xmlns:titleBarButton="clr-namespace:ProMedScope.Controls.TitleBar._Elements.Button;assembly=ProMedScope.Controls">
 
     <!-- TitleBarTemplate -->
     <ControlTemplate x:Key="TitleBarTemplate" TargetType="{x:Type titleBar:PmTitleBar}">
@@ -19,6 +20,21 @@
                        Height="120"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"/>
+
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- ProfileButton -->
+                    <titleBarButton:PmTitleBarButton
+                        Grid.Column="1"
+                        x:Name="ProfileButton"
+                        ButtonName="Profile"
+                        HorizontalAlignment="Right"/>
+
+                </Grid>
             </Grid>
         </Border>
     </ControlTemplate>
