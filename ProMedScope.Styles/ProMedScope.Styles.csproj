@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="_Core\Resources\Images\ProfilePhoto.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -19,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="_Core\Resources\Images\ProfilePhoto.png" />
     <Resource Include="_Core\Resources\Images\TitleBarLogo.png" />
   </ItemGroup>
 
