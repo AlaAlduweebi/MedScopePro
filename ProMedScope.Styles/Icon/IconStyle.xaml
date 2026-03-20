@@ -18,6 +18,7 @@
                         <Image x:Name="ImageIcon"
 						       Width="{TemplateBinding Width}"
 						       Height="{TemplateBinding Height}"
+                               Source="{TemplateBinding RenderedDrawingImage}" 
 						       Stretch="Uniform"/>
                     </Border>
                 </ControlTemplate>
