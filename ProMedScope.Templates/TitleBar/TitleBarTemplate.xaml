@@ -10,7 +10,7 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
                 <!-- TitleBarLogo -->
@@ -21,26 +21,36 @@
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"/>
 
-                <Grid Grid.Column="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center">
+
+                    <!-- DesignToggleButton -->
+                    <titleBarToggleButton:PmTitleBarToggleButton
+                        x:Name="DesignToggleButton"
+                        ButtonName="Design"
+                        Margin="0,0,20,0"/>
+
+                    <!-- LanguageToggleButton -->
+                    <titleBarToggleButton:PmTitleBarToggleButton
+                        x:Name="LanguageToggleButton"
+                        ButtonName="Language"
+                        Margin="0,0,20,0"/>
 
                     <!-- Separator -->
-                    <Border Grid.Column="1"
-                            Width="1"
+                    <Border Width="1"
                             Height="20"
-                            Background="Black"/>
+                            Background="Black"
+                            Margin="0,0,20,0"
+                            VerticalAlignment="Center"/>
 
                     <!-- ProfileToggleButton -->
                     <titleBarToggleButton:PmTitleBarToggleButton
-                        Grid.Column="1"
                         x:Name="ProfileToggleButton"
-                        ButtonName="Profile"
-                        HorizontalAlignment="Right"/>
-
-                </Grid>
+                        ButtonName="Profile"/>
+                    
+                </StackPanel>
             </Grid>
         </Border>
     </ControlTemplate>

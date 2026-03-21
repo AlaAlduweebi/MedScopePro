@@ -93,8 +93,8 @@ public class PmIcon : PmContentControl
         {
             Children =
         {
-            BuildGeometryDrawing(geometry)
-        }
+            BuildGeometryDrawing(geometry),
+        },
         });
     }
 
@@ -105,7 +105,8 @@ public class PmIcon : PmContentControl
     {
         return new GeometryDrawing
         {
-            Geometry = geometry
+            Geometry = geometry,
+            Brush = Brushes.Black
         };
     }
 

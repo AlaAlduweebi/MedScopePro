@@ -4,6 +4,7 @@
     <ResourceDictionary.MergedDictionaries>
 
         <!-- Icon -->
+        <ResourceDictionary Source="/ProMedScope.Styles;component/_Core/Resources/Icons/SvgPaths.xaml" />
         <ResourceDictionary Source="/ProMedScope.Styles;component/Icon/IconStyle.xaml" />
         
         <!-- Elements -->
