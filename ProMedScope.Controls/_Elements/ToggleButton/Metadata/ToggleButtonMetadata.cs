@@ -25,10 +25,10 @@ public static class ToggleButtonMetadata
     {
         // TitleBar
         [PmTitleBarToggleButtonEnum.Design] = new ToggleButtonMeta(
-            Icon: PmIconEnum.Routine,
-            Tooltip: "Design"),
+            Icon: PmIconEnum.DarkMode,
+            Tooltip: "Dunkles Design aktivieren"),
         [PmTitleBarToggleButtonEnum.Language] = new ToggleButtonMeta(
-            Tooltip: "Sprache"),
+            Tooltip: "Englich"),
         [PmTitleBarToggleButtonEnum.Profile] = new ToggleButtonMeta(
             Label: "Dr. Ala Alduweebi",
             Tooltip: "Profil"),

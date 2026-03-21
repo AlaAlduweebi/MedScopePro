@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="_Core\Resources\Images\Englich.jpg" />
+    <None Remove="_Core\Resources\Images\German.jpg" />
     <None Remove="_Core\Resources\Images\ProfilePhoto.png" />
   </ItemGroup>
 
@@ -23,6 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="_Core\Resources\Images\Englich.jpg" />
+    <Resource Include="_Core\Resources\Images\German.jpg" />
     <Resource Include="_Core\Resources\Images\ProfilePhoto.png" />
     <Resource Include="_Core\Resources\Images\TitleBarLogo.png" />
   </ItemGroup>

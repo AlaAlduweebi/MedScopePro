@@ -6,7 +6,8 @@
     public enum PmIconEnum
     {
         None,
-        Routine,
+        DarkMode,
+        LightMode,
         ZoomIn,
         ZoomOut,
         Tune,
