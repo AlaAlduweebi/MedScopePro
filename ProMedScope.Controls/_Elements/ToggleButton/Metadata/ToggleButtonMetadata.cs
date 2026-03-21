@@ -13,9 +13,19 @@ public static class ToggleButtonMetadata
     /// Enthält Metadaten wie Icon, Tooltip und Beschriftung für einen ToggleButton.
     /// </summary>
     public record ToggleButtonMeta(
-        PmIconEnum Icon = PmIconEnum.None,
-        string? Label = null,
-        string? Tooltip = null
+        PmIconEnum? icon = null,
+        string? label = null,
+        string? tooltip = null,
+        IsCheckedMeta? isChecked = null
+    );
+
+    /// <summary>
+    /// Metadaten für den aktivierten Zustand.
+    /// </summary>
+    public record IsCheckedMeta(
+        PmIconEnum? icon = null,
+        string? label = null,
+        string? tooltip = null
     );
 
     /// <summary>
@@ -25,31 +35,42 @@ public static class ToggleButtonMetadata
     {
         // TitleBar
         [PmTitleBarToggleButtonEnum.Design] = new ToggleButtonMeta(
-            Icon: PmIconEnum.DarkMode,
-            Tooltip: "Dunkles Design aktivieren"),
+                icon: PmIconEnum.DarkMode,
+                tooltip: "Dunkles Design aktivieren",
+                isChecked: new IsCheckedMeta(
+                    icon: PmIconEnum.LightMode,
+                    tooltip: "Helles Design aktivieren"
+                )),
         [PmTitleBarToggleButtonEnum.Language] = new ToggleButtonMeta(
-            Tooltip: "Englich"),
+                icon: PmIconEnum.DarkMode,
+                tooltip: "Englich",
+                isChecked: new IsCheckedMeta(
+                    icon: PmIconEnum.LightMode,
+                    tooltip: "Deutsch"
+                )),
         [PmTitleBarToggleButtonEnum.Profile] = new ToggleButtonMeta(
-            Label: "Dr. Ala Alduweebi",
-            Tooltip: "Profil"),
+            label: "Dr. Ala Alduweebi",
+            tooltip: "Profil"),
     };
 
     /// <summary>
     /// Gibt die Metadaten für den angegebenen ToggleButton-Namen zurück (falls vorhanden).
     /// </summary>
-    public static ToggleButtonMeta? GetMeta(Enum ToggleButtonName)
-        => Metadata.GetValueOrDefault(ToggleButtonName);
+    public static ToggleButtonMeta? GetMeta(Enum toggleButton)
+        => Metadata.GetValueOrDefault(toggleButton);
 
     /// <summary>
     /// Wendet Tooltip und Icon automatisch auf generische ToggleButton-Instanzen an.
     /// </summary>
-    public static void ApplyMetadata<TEnum>(PmToggleButtonGeneric<TEnum> ToggleButton) where TEnum : Enum
+    public static void ApplyMetadata<TEnum>(PmToggleButtonGeneric<TEnum> toggleButton) where TEnum : Enum
     {
-        var meta = GetMeta(ToggleButton.ButtonName);
+        var meta = GetMeta(toggleButton.ButtonName);
         if (meta == null) return;
 
-        ToggleButton.Icon = meta.Icon;
-        ToggleButton.Content ??= meta.Label;
-        ToggleButton.ToolTip = meta.Tooltip;
+        var toggle = toggleButton.IsChecked == true ? meta.isChecked : null;
+
+        toggleButton.Icon = toggle?.icon ?? meta.icon ?? PmIconEnum.None;
+        toggleButton.Content = toggle?.label ?? meta.label ?? toggleButton.Content;
+        toggleButton.ToolTip = toggle?.tooltip ?? meta.tooltip;
     }
 }

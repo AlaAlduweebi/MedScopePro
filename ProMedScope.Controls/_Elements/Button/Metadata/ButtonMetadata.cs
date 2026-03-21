@@ -13,9 +13,9 @@ public static class ButtonMetadata
     /// Enthält Metadaten wie Icon, Tooltip und Beschriftung für einen Button.
     /// </summary>
     public record ButtonMeta(
-        PmIconEnum Icon = PmIconEnum.None,
-        string? Label = null,
-        string? Tooltip = null
+        PmIconEnum icon = PmIconEnum.None,
+        string? label = null,
+        string? tooltip = null
     );
 
     /// <summary>
@@ -39,8 +39,8 @@ public static class ButtonMetadata
         var meta = GetMeta(button.ButtonName);
         if (meta == null) return;
 
-        button.Icon = meta.Icon;
-        button.Content ??= meta.Label;
-        button.ToolTip = meta.Tooltip;
+        button.Icon = meta.icon;
+        button.Content ??= meta.label;
+        button.ToolTip = meta.tooltip;
     }
 }
