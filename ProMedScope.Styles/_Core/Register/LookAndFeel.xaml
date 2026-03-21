@@ -23,7 +23,7 @@
         <ResourceDictionary Source="/ProMedScope.Styles;component/MainView/MainViewStyle.xaml" />
 
         <!-- TitleBar -->
-        <ResourceDictionary Source="/ProMedScope.Styles;component/TitleBar/Button/TitleBarButtonStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/TitleBar/ToggleButton/TitleBarToggleButtonStyle.xaml" />
         
         <!-- MainView -->
         <ResourceDictionary Source="/ProMedScope.Styles;component/MainView/MainViewStyle.xaml" />

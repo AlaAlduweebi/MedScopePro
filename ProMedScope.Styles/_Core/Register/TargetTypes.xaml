@@ -14,7 +14,7 @@
                     xmlns:textBox="clr-namespace:ProMedScope.Controls._Elements.TextBox;assembly=ProMedScope.Controls"
                     xmlns:toggleButton="clr-namespace:ProMedScope.Controls._Elements.ToggleButton;assembly=ProMedScope.Controls"
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls"
-                    xmlns:titleBarButton="clr-namespace:ProMedScope.Controls.TitleBar._Elements.Button;assembly=ProMedScope.Controls">
+                    xmlns:titleBarToggleButton="clr-namespace:ProMedScope.Controls.TitleBar._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
     <!-- Elements -->
     <Style TargetType="{x:Type button:PmButton}" BasedOn="{StaticResource ButtonStyle}" />
@@ -35,6 +35,6 @@
     <Style TargetType="{x:Type icon:PmIcon}" BasedOn="{StaticResource IconStyle}" />
     
     <!-- TitleBar -->
-    <Style TargetType="{x:Type titleBarButton:PmTitleBarButton}" BasedOn="{StaticResource TitleBarButtonStyle}" />
+    <Style TargetType="{x:Type titleBarToggleButton:PmTitleBarToggleButton}" BasedOn="{StaticResource TitleBarToggleButtonStyle}" />
 
 </ResourceDictionary>

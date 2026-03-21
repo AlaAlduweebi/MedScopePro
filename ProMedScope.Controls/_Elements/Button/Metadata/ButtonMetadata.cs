@@ -23,10 +23,6 @@ public static class ButtonMetadata
     /// </summary>
     private static readonly Dictionary<Enum, ButtonMeta> Metadata = new()
     {
-        // TitleBar
-        [PmTitleBarButtonEnum.Profile] = new ButtonMeta(
-            Label: "Dr. Ala Alduweebi",
-            Tooltip: "Profil"),
     };
 
     /// <summary>

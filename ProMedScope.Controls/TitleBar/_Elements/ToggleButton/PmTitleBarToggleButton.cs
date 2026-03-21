@@ -1,12 +1,12 @@
-﻿using ProMedScope.Controls._Elements.Button.Generic;
+﻿using ProMedScope.Controls._Elements.ToggleButton.Generic;
 using System.Windows;
 
-namespace ProMedScope.Controls.TitleBar._Elements.Button;
+namespace ProMedScope.Controls.TitleBar._Elements.ToggleButton;
 
 /// <summary>
-/// /// Benutzerdefinierter Button für die TitleBar.
+/// /// Benutzerdefinierter ToggleButton für die TitleBar.
 /// </summary>
-public class PmTitleBarButton : PmButtonGeneric<PmTitleBarButtonEnum>
+public class PmTitleBarToggleButton : PmToggleButtonGeneric<PmTitleBarToggleButtonEnum>
 {
     #region Methoden
 
@@ -18,7 +18,7 @@ public class PmTitleBarButton : PmButtonGeneric<PmTitleBarButtonEnum>
     {
         switch (ButtonName)
         {
-            case PmTitleBarButtonEnum.Profile:
+            case PmTitleBarToggleButtonEnum.Profile:
                 break;
 
             default:

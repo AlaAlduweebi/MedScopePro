@@ -1,4 +1,5 @@
 ﻿using ProMedScope.Controls._Elements.ToggleButton.Generic;
+using ProMedScope.Controls.TitleBar._Elements;
 using ProMedScope.Controls.Icon;
 
 namespace ProMedScope.Controls._Elements.ToggleButton.Metadata;
@@ -22,6 +23,10 @@ public static class ToggleButtonMetadata
     /// </summary>
     private static readonly Dictionary<Enum, ToggleButtonMeta> Metadata = new()
     {
+        // TitleBar
+        [PmTitleBarToggleButtonEnum.Profile] = new ToggleButtonMeta(
+            Label: "Dr. Ala Alduweebi",
+            Tooltip: "Profil"),
     };
 
     /// <summary>
@@ -35,7 +40,7 @@ public static class ToggleButtonMetadata
     /// </summary>
     public static void ApplyMetadata<TEnum>(PmToggleButtonGeneric<TEnum> ToggleButton) where TEnum : Enum
     {
-        var meta = GetMeta(ToggleButton.ToggleButtonName);
+        var meta = GetMeta(ToggleButton.ButtonName);
         if (meta == null) return;
 
         ToggleButton.Icon = meta.Icon;

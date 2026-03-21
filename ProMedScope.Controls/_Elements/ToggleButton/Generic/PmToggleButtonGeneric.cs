@@ -12,8 +12,8 @@ public abstract class PmToggleButtonGeneric<TEnum> : PmToggleButton where TEnum 
 {
     #region Dependency Properties
 
-    public static readonly DependencyProperty ToggleButtonNameProperty =
-        DependencyProperty.Register(nameof(ToggleButtonName), typeof(TEnum), typeof(PmToggleButtonGeneric<TEnum>), new PropertyMetadata(default(TEnum)));
+    public static readonly DependencyProperty ButtonNameProperty =
+        DependencyProperty.Register(nameof(ButtonName), typeof(TEnum), typeof(PmToggleButtonGeneric<TEnum>), new PropertyMetadata(default(TEnum)));
 
     public static readonly DependencyProperty IconProperty =
         DependencyProperty.Register(nameof(Icon), typeof(PmIconEnum), typeof(PmToggleButtonGeneric<TEnum>), new PropertyMetadata(default(PmIconEnum)));
@@ -25,10 +25,10 @@ public abstract class PmToggleButtonGeneric<TEnum> : PmToggleButton where TEnum 
     /// <summary>
     /// Der Name des ToggleButtons, der als Enum-Wert definiert ist.
     /// </summary>
-    public TEnum ToggleButtonName
+    public TEnum ButtonName
     {
-        get => (TEnum)GetValue(ToggleButtonNameProperty);
-        set => SetValue(ToggleButtonNameProperty, value);
+        get => (TEnum)GetValue(ButtonNameProperty);
+        set => SetValue(ButtonNameProperty, value);
     }
 
     #endregion
@@ -40,7 +40,7 @@ public abstract class PmToggleButtonGeneric<TEnum> : PmToggleButton where TEnum 
     /// </summary>
     protected PmToggleButtonGeneric()
     {
-        Click += ToggleButtonClick;
+        Click += ButtonClick;
     }
 
     /// <summary>
@@ -68,9 +68,9 @@ public abstract class PmToggleButtonGeneric<TEnum> : PmToggleButton where TEnum 
 
     /// <summary>
     /// Event-Handler für ToggleButton-Klick.
-    /// Führt die entsprechende Aktion basierend auf dem <see cref="ToggleButtonName"/> aus.
+    /// Führt die entsprechende Aktion basierend auf dem <see cref="ButtonName"/> aus.
     /// </summary>
-    protected virtual void ToggleButtonClick(object sender, RoutedEventArgs e)
+    protected virtual void ButtonClick(object sender, RoutedEventArgs e)
     {
         ArgumentNullException.ThrowIfNull(e);
         ArgumentNullException.ThrowIfNull(sender);
