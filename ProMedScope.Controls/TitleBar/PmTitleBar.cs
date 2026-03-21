@@ -3,7 +3,7 @@
 namespace ProMedScope.Controls.TitleBar;
 
 /// <summary>
-/// Benutzerdefinierte TitleBar.
+/// Repräsentiert die Titelleise der Anwendung.
 /// </summary>
 public class PmTitleBar : PmContentControl
 {
