@@ -23,6 +23,9 @@
         <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ContentControl/ContentControlStyle.xaml" />
         <ResourceDictionary Source="/ProMedScope.Styles;component/MainView/MainViewStyle.xaml" />
 
+        <!-- SideMenu -->
+        <ResourceDictionary Source="/ProMedScope.Styles;component/SideMenu/SideMenuStyle.xaml" />
+
         <!-- TitleBar -->
         <ResourceDictionary Source="/ProMedScope.Styles;component/TitleBar/ToggleButton/TitleBarToggleButtonStyle.xaml" />
         
