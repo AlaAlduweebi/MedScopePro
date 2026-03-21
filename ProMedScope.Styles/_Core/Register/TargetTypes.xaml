@@ -14,6 +14,7 @@
                     xmlns:textBox="clr-namespace:ProMedScope.Controls._Elements.TextBox;assembly=ProMedScope.Controls"
                     xmlns:toggleButton="clr-namespace:ProMedScope.Controls._Elements.ToggleButton;assembly=ProMedScope.Controls"
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls"
+                    xmlns:sideMenuTabItem="clr-namespace:ProMedScope.Controls.SideMenu.TabItem;assembly=ProMedScope.Controls"
                     xmlns:sideMenu="clr-namespace:ProMedScope.Controls.SideMenu;assembly=ProMedScope.Controls"
                     xmlns:titleBarToggleButton="clr-namespace:ProMedScope.Controls.TitleBar._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
@@ -36,6 +37,7 @@
     <Style TargetType="{x:Type icon:PmIcon}" BasedOn="{StaticResource IconStyle}" />
 
     <!-- SideMenu -->
+    <Style TargetType="{x:Type sideMenuTabItem:PmSideMenuTabItem}" BasedOn="{StaticResource SideMenuTabItemStyle}" />
     <Style TargetType="{x:Type sideMenu:PmSideMenu}" BasedOn="{StaticResource SideMenuStyle}" />
 
     <!-- TitleBar -->
