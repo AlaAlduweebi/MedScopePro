@@ -27,13 +27,19 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <!-- ProfileButton -->
-                    <titleBarButton:PmTitleBarButton
-                        Grid.Column="1"
-                        x:Name="ProfileButton"
-                        ButtonName="Profile"
-                        HorizontalAlignment="Right"/>
+                    <!-- Separator -->
+                    <Border Grid.Column="1"
+                            Width="1"
+                            Height="20"
+                            Background="Black"/>
 
+                    <!-- ProfileButton -->
+                        <titleBarButton:PmTitleBarButton
+                            Grid.Column="1"
+                            x:Name="ProfileButton"
+                            ButtonName="Profile"
+                            HorizontalAlignment="Right"/>
+                        
                 </Grid>
             </Grid>
         </Border>
