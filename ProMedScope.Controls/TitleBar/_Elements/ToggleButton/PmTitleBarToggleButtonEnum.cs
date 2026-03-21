@@ -5,5 +5,7 @@
 /// </summary>
 public enum PmTitleBarToggleButtonEnum
 {
-    Profile,
+    Design,
+    Language,
+    Profile
 }

@@ -24,6 +24,11 @@ public static class ToggleButtonMetadata
     private static readonly Dictionary<Enum, ToggleButtonMeta> Metadata = new()
     {
         // TitleBar
+        [PmTitleBarToggleButtonEnum.Design] = new ToggleButtonMeta(
+            Icon: PmIconEnum.Routine,
+            Tooltip: "Design"),
+        [PmTitleBarToggleButtonEnum.Language] = new ToggleButtonMeta(
+            Tooltip: "Sprache"),
         [PmTitleBarToggleButtonEnum.Profile] = new ToggleButtonMeta(
             Label: "Dr. Ala Alduweebi",
             Tooltip: "Profil"),

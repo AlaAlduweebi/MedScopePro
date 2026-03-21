@@ -18,6 +18,12 @@ public class PmTitleBarToggleButton : PmToggleButtonGeneric<PmTitleBarToggleButt
     {
         switch (ButtonName)
         {
+            case PmTitleBarToggleButtonEnum.Design:
+                break;
+
+            case PmTitleBarToggleButtonEnum.Language:
+                break;
+
             case PmTitleBarToggleButtonEnum.Profile:
                 break;
 
