@@ -1,4 +1,5 @@
-﻿using ProMedScope.Controls.Icon;
+﻿using ProMedScope.Controls._Elements.ToggleButton.Metadata;
+using ProMedScope.Controls.Icon;
 using System.Windows;
 
 namespace ProMedScope.Controls._Elements.ToggleButton.Generic;
@@ -61,6 +62,8 @@ public abstract class PmToggleButtonGeneric<TEnum> : PmToggleButton where TEnum 
     protected override void OnInitialized(EventArgs e)
     {
         base.OnInitialized(e);
+
+        ToggleButtonMetadata.ApplyMetadata(this);
     }
 
     /// <summary>
