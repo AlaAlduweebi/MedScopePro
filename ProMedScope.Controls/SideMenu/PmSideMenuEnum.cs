@@ -6,7 +6,7 @@
     public enum PmSideMenuEnum
     {
         Dashboard,
-        Person,
+        Patient,
         Recordings,
         Findings,
         Settings

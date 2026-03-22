@@ -4,7 +4,7 @@ using ProMedScope.Views.Recordings;
 using ProMedScope.Views.Dashboard;
 using ProMedScope.Views.Findings;
 using ProMedScope.Views.Settings;
-using ProMedScope.Views.Person;
+using ProMedScope.Views.Patient;
 
 namespace ProMedScope.Controls.SideMenu;
 
@@ -32,9 +32,9 @@ public class PmSideMenu : PmTabControl
 
         Items.Add(new PmSideMenuTabItem
         {
-            MenuName = PmSideMenuEnum.Person,
+            MenuName = PmSideMenuEnum.Patient,
             Icon = Icon.PmIconEnum.Person,
-            View = new PersonView(),
+            View = new PatientView(),
         });
 
         Items.Add(new PmSideMenuTabItem
