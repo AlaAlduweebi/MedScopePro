@@ -12,14 +12,20 @@
                 <ControlTemplate TargetType="{x:Type sideMenu:PmSideMenu}">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <TabPanel Grid.Column="0"
-                                  IsItemsHost="True"
-                                  Background="#F5F5F5"/>
+                        <!-- SideMenu -->
+                        <Border Grid.Column="0"
+                                Background="White"
+                                Margin="20,0,0,0"
+                                CornerRadius="40"
+                                Width="70" Height="460">
+                            <TabPanel VerticalAlignment="Center" IsItemsHost="True"/>
+                        </Border>
 
+                        <!-- TabContent -->
                         <ContentPresenter Grid.Column="1"
                                           ContentSource="SelectedContent"/>
                     </Grid>

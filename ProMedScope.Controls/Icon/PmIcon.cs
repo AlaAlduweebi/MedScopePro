@@ -41,6 +41,15 @@ public class PmIcon : PmContentControl
 
     #endregion
 
+    /// <summary>
+    /// Reagiert auf Änderungen der Foreground-Farbe und aktualisiert das Icon.
+    /// </summary>
+    static PmIcon()
+    {
+        ForegroundProperty.OverrideMetadata(typeof(PmIcon),
+            new FrameworkPropertyMetadata(Brushes.Black, OnIconVisualChanged));
+    }
+
     #region Methoden
 
     /// <summary>
@@ -81,19 +90,20 @@ public class PmIcon : PmContentControl
             return;
         }
 
-        RenderedDrawingImage = BuildDrawingImage(geometry);
+        var color = Foreground ?? Brushes.Black;
+        RenderedDrawingImage = BuildDrawingImage(geometry, color);
     }
 
     /// <summary>
     /// Erstellt ein DrawingImage basierend auf der angegebenen Geometrie.
     /// </summary>
-    private static DrawingImage BuildDrawingImage(Geometry geometry)
+    private static DrawingImage BuildDrawingImage(Geometry geometry, Brush brush)
     {
         return new DrawingImage(new DrawingGroup
         {
             Children =
         {
-            BuildGeometryDrawing(geometry),
+            BuildGeometryDrawing(geometry, brush),
         },
         });
     }
@@ -101,12 +111,12 @@ public class PmIcon : PmContentControl
     /// <summary>
     /// Erstellt eine GeometryDrawing.
     /// </summary>
-    private static GeometryDrawing BuildGeometryDrawing(Geometry geometry)
+    private static GeometryDrawing BuildGeometryDrawing(Geometry geometry, Brush brush)
     {
         return new GeometryDrawing
         {
             Geometry = geometry,
-            Brush = Brushes.Black
+            Brush = brush,
         };
     }
 

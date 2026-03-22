@@ -13,16 +13,32 @@
                 <ControlTemplate TargetType="{x:Type sideMenuTabItem:PmSideMenuTabItem}">
                     <Border x:Name="Border"
                             Background="{TemplateBinding Background}">
+                        <Grid>
+
+                            <!-- SelectedLine -->
+                            <Border x:Name="SelectedLine"
+                                    Height="46" Width="4"
+                                    Background="{TemplateBinding Foreground}"
+                                    HorizontalAlignment="Left"
+                                    CornerRadius="2"
+                                    Visibility="Collapsed"/>
 
                             <!-- Icon -->
                             <icon:PmIcon x:Name="Icon" 
-                                         Height="22" Width="22"
+                                         IconMaterial="{TemplateBinding Icon}"
+                                         Foreground="{TemplateBinding Foreground}"
+                                         Height="32" Width="32"
                                          HorizontalAlignment="Center"
-                                         VerticalAlignment="Center"
-                                         IconMaterial="{TemplateBinding Icon}"/>
+                                         VerticalAlignment="Center"/>
+                        </Grid>
                     </Border>
                     <ControlTemplate.Triggers>
-                        
+
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="SelectedLine" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="SelectedLine" Property="Background" Value="#2978F5" />
+                            <Setter TargetName="Icon" Property="Foreground" Value="#2978F5" />
+                        </Trigger>
 
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

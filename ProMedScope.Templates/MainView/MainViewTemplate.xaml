@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:mainView="clr-namespace:ProMedScope.Controls.MainView;assembly=ProMedScope.Controls"
                     xmlns:titleBar="clr-namespace:ProMedScope.Controls.TitleBar;assembly=ProMedScope.Controls"
-                    xmlns:button="clr-namespace:ProMedScope.Controls._Elements.Button;assembly=ProMedScope.Controls">
+                    xmlns:sideMenu="clr-namespace:ProMedScope.Controls.SideMenu;assembly=ProMedScope.Controls"
+                    xmlns:sideMenuTabItem="clr-namespace:ProMedScope.Controls.SideMenu.TabItem;assembly=ProMedScope.Controls">
 
     <!-- MainViewTemplate -->
     <ControlTemplate x:Key="MainViewTemplate" TargetType="{x:Type mainView:PmMainView}">
@@ -12,15 +13,21 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
+            <!-- TitleBar -->
             <titleBar:PmTitleBar Grid.Row="0" 
                                  x:Name="TitleBar"/>
 
+            <!-- ContentBorder -->
             <Border Grid.Row="1" 
                     x:Name="ContentBorder"
                     Background="#F6F6F6" 
                     CornerRadius="14"
                     Margin="20,0,20,20">
 
+                <!-- SideMenu -->
+                <sideMenu:PmSideMenu x:Name="SideMenu"
+                                     SelectedIndex="1"
+                                     VerticalAlignment="Center"/>
 
             </Border>
         </Grid>
