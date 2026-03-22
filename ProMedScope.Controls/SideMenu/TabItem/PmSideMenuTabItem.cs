@@ -17,6 +17,9 @@ public class PmSideMenuTabItem : PmTabControlTabItem
     public static readonly DependencyProperty IconProperty =
         DependencyProperty.Register(nameof(Icon), typeof(PmIconEnum), typeof(PmSideMenuTabItem), new PropertyMetadata(PmIconEnum.None));
 
+    public static readonly DependencyProperty ViewProperty =
+        DependencyProperty.Register(nameof(View), typeof(object), typeof(PmSideMenuTabItem));
+
     #endregion
 
     #region Eigenschaften
@@ -37,6 +40,15 @@ public class PmSideMenuTabItem : PmTabControlTabItem
     {
         get => (PmIconEnum)GetValue(IconProperty);
         set => SetValue(IconProperty, value);
+    }
+
+    /// <summary>
+    /// Definiert die anzuzeigende View des Menüeintrags.
+    /// </summary>
+    public object View
+    {
+        get => GetValue(ViewProperty);
+        set => SetValue(ViewProperty, value);
     }
 
     #endregion

@@ -1,5 +1,11 @@
 ﻿using ProMedScope.Controls._Elements.TabControl;
 using ProMedScope.Controls.SideMenu.TabItem;
+using ProMedScope.Views.Recordings;
+using ProMedScope.Views.Dashboard;
+using ProMedScope.Views.Findings;
+using ProMedScope.Views.Settings;
+using ProMedScope.Views.Person;
+
 namespace ProMedScope.Controls.SideMenu;
 
 /// <summary>
@@ -21,35 +27,35 @@ public class PmSideMenu : PmTabControl
         {
             MenuName = PmSideMenuEnum.Dashboard,
             Icon = Icon.PmIconEnum.Dashboard,
-            Content = "Dashboard",
+            View = new DashboardView(),
         });
 
         Items.Add(new PmSideMenuTabItem
         {
             MenuName = PmSideMenuEnum.Person,
             Icon = Icon.PmIconEnum.Person,
-            Content = "Person",
+            View = new PersonView(),
         });
 
         Items.Add(new PmSideMenuTabItem
         {
             MenuName = PmSideMenuEnum.Recordings,
             Icon = Icon.PmIconEnum.AnimatedImages,
-            Content = "Recordings",
+            View = new RecordingsView(),
         });
 
         Items.Add(new PmSideMenuTabItem
         {
             MenuName = PmSideMenuEnum.Findings,
             Icon = Icon.PmIconEnum.Assignment,
-            Content = "Befunde",
+            View = new FindingsView(),
         });
 
         Items.Add(new PmSideMenuTabItem
         {
             MenuName = PmSideMenuEnum.Settings,
             Icon = Icon.PmIconEnum.Settings,
-            Content = "Einstellungen",
+            View = new SettingsView(),
         });
     }
 }
