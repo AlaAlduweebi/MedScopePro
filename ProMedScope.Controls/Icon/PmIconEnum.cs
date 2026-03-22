@@ -29,6 +29,7 @@
         AnimatedImages,
         Assignment,
         Dashboard,
-        Person
+        Person,
+        Power
     }
 }

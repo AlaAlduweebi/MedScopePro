@@ -7,8 +7,7 @@
     {
         Dashboard,
         Patient,
-        Recordings,
-        Findings,
+        Reports,
         Settings
     }
 }
