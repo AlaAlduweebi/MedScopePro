@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:sideMenu="clr-namespace:ProMedScope.Controls.SideMenu;assembly=ProMedScope.Controls">
+                    xmlns:sideMenu="clr-namespace:ProMedScope.Controls.SideMenu;assembly=ProMedScope.Controls"
+                    xmlns:sideMenuToggleButton="clr-namespace:ProMedScope.Controls.SideMenu._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
     <!-- SideMenuStyle -->
     <Style x:Key="SideMenuStyle" TargetType="{x:Type sideMenu:PmSideMenu}">
@@ -22,13 +23,31 @@
                                 Margin="20,0,0,0"
                                 CornerRadius="40"
                                 Width="70" Height="460">
-                            <TabPanel VerticalAlignment="Center" IsItemsHost="True"/>
+
+                            <Grid VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Tabs -->
+                                <TabPanel Grid.Row="0" 
+                                          IsItemsHost="True"/>
+
+                                <!-- PowerToggleButton -->
+                                <sideMenuToggleButton:PmSideMenuToggleButton 
+                                    Grid.Row="1"
+                                    x:Name="PowerToggleButton"
+                                    ButtonName="Power"
+                                    Margin="0,16,0,0"/>
+                                
+                            </Grid>
                         </Border>
 
                         <!-- TabContent -->
                         <ContentPresenter Grid.Column="1"
                                           Content="{Binding SelectedItem.View, RelativeSource={RelativeSource TemplatedParent}}"/>
-                        
+
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

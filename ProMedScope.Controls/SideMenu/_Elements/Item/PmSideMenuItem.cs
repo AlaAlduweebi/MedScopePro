@@ -2,7 +2,7 @@
 using ProMedScope.Controls.Icon;
 using System.Windows;
 
-namespace ProMedScope.Controls.SideMenu.Item;
+namespace ProMedScope.Controls.SideMenu._Elements.Item;
 
 /// <summary>
 /// Repräsentiert einen Eintrag im Seitenmenü.
@@ -12,7 +12,7 @@ public class PmSideMenuItem : PmTabControlTabItem
     #region Dependency Properties
 
     public static readonly DependencyProperty MenuNameProperty =
-        DependencyProperty.Register(nameof(MenuName), typeof(PmSideMenuEnum), typeof(PmSideMenuItem));
+        DependencyProperty.Register(nameof(MenuName), typeof(PmSideMenuItemEnum), typeof(PmSideMenuItem));
 
     public static readonly DependencyProperty IconProperty =
         DependencyProperty.Register(nameof(Icon), typeof(PmIconEnum), typeof(PmSideMenuItem), new PropertyMetadata(PmIconEnum.None));
@@ -27,9 +27,9 @@ public class PmSideMenuItem : PmTabControlTabItem
     /// <summary>
     /// Definiert den Seitentyp des Menüeintrags.
     /// </summary>
-    public PmSideMenuEnum MenuName
+    public PmSideMenuItemEnum MenuName
     {
-        get => (PmSideMenuEnum)GetValue(MenuNameProperty);
+        get => (PmSideMenuItemEnum)GetValue(MenuNameProperty);
         set => SetValue(MenuNameProperty, value);
     }
 

@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:sideMenuItem="clr-namespace:ProMedScope.Controls.SideMenu.Item;assembly=ProMedScope.Controls"
+                    xmlns:sideMenuItem="clr-namespace:ProMedScope.Controls.SideMenu._Elements.Item;assembly=ProMedScope.Controls"
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls">
 
     <!-- SideMenuItemStyle -->
@@ -34,10 +34,13 @@
                     </Border>
                     <ControlTemplate.Triggers>
 
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#2978F5" />
+                        </Trigger>
+                        
                         <Trigger Property="IsSelected" Value="True">
                             <Setter TargetName="SelectedLine" Property="Visibility" Value="Visible" />
-                            <Setter TargetName="SelectedLine" Property="Background" Value="#2978F5" />
-                            <Setter TargetName="Icon" Property="Foreground" Value="#2978F5" />
+                            <Setter Property="Foreground" Value="#2978F5" />
                         </Trigger>
 
                     </ControlTemplate.Triggers>

@@ -1,4 +1,5 @@
-﻿using ProMedScope.Controls._Elements.ToggleButton.Generic;
+﻿using ProMedScope.Controls.SideMenu._Elements.ToggleButton;
+using ProMedScope.Controls._Elements.ToggleButton.Generic;
 using ProMedScope.Controls.TitleBar._Elements;
 using ProMedScope.Controls.Icon;
 
@@ -33,6 +34,12 @@ public static class ToggleButtonMetadata
     /// </summary>
     private static readonly Dictionary<Enum, ToggleButtonMeta> Metadata = new()
     {
+        // SideMenu
+        [PmSideMenuToggleButtonEnum.Power] = new ToggleButtonMeta(
+                icon: PmIconEnum.Power,
+                tooltip: "Ein/Aus"
+            ),
+
         // TitleBar
         [PmTitleBarToggleButtonEnum.Design] = new ToggleButtonMeta(
                 icon: PmIconEnum.DarkMode,

@@ -1,9 +1,9 @@
-﻿namespace ProMedScope.Controls.SideMenu
+﻿namespace ProMedScope.Controls.SideMenu._Elements.Item
 {
     /// <summary>
     /// Definiert die Einträge des Seitenmenüs.
     /// </summary>
-    public enum PmSideMenuEnum
+    public enum PmSideMenuItemEnum
     {
         Dashboard,
         Patient,
