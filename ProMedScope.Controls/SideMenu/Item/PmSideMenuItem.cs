@@ -2,23 +2,23 @@
 using ProMedScope.Controls.Icon;
 using System.Windows;
 
-namespace ProMedScope.Controls.SideMenu.TabItem;
+namespace ProMedScope.Controls.SideMenu.Item;
 
 /// <summary>
 /// Repräsentiert einen Eintrag im Seitenmenü.
 /// </summary>
-public class PmSideMenuTabItem : PmTabControlTabItem
+public class PmSideMenuItem : PmTabControlTabItem
 {
     #region Dependency Properties
 
     public static readonly DependencyProperty MenuNameProperty =
-        DependencyProperty.Register(nameof(MenuName), typeof(PmSideMenuEnum), typeof(PmSideMenuTabItem));
+        DependencyProperty.Register(nameof(MenuName), typeof(PmSideMenuEnum), typeof(PmSideMenuItem));
 
     public static readonly DependencyProperty IconProperty =
-        DependencyProperty.Register(nameof(Icon), typeof(PmIconEnum), typeof(PmSideMenuTabItem), new PropertyMetadata(PmIconEnum.None));
+        DependencyProperty.Register(nameof(Icon), typeof(PmIconEnum), typeof(PmSideMenuItem), new PropertyMetadata(PmIconEnum.None));
 
     public static readonly DependencyProperty ViewProperty =
-        DependencyProperty.Register(nameof(View), typeof(object), typeof(PmSideMenuTabItem));
+        DependencyProperty.Register(nameof(View), typeof(object), typeof(PmSideMenuItem));
 
     #endregion
 
