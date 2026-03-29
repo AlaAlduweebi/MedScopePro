@@ -1,12 +1,12 @@
 ﻿using ProMedScope.Controls._Elements.ToggleButton.Generic;
 using System.Windows;
 
-namespace ProMedScope.Controls.SideMenu._Elements.ToggleButton;
+namespace ProMedScope.Controls.SideMenu._Elements.Button;
 
 /// <summary>
 /// /// Benutzerdefinierter ToggleButton für das SideMenu.
 /// </summary>
-public class PmSideMenuToggleButton : PmToggleButtonGeneric<PmSideMenuToggleButtonEnum>
+public class PmSideMenuButton : PmToggleButtonGeneric<PmSideMenuButtonEnum>
 {
     #region Methoden
 
@@ -18,7 +18,7 @@ public class PmSideMenuToggleButton : PmToggleButtonGeneric<PmSideMenuToggleButt
     {
         switch (ButtonName)
         {
-            case PmSideMenuToggleButtonEnum.Power:
+            case PmSideMenuButtonEnum.Power:
                 break;
 
             default:
