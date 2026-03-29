@@ -19,11 +19,23 @@ public class PmSideMenuButton : PmToggleButtonGeneric<PmSideMenuButtonEnum>
         switch (ButtonName)
         {
             case PmSideMenuButtonEnum.Power:
+                CloseWindow();
                 break;
 
             default:
                 throw new ArgumentOutOfRangeException();
         }
+    }
+
+    /// <summary>
+    /// Schließt das Fenster.
+    /// </summary>
+    public void CloseWindow()
+    {
+        var window = Window.GetWindow(this);
+        if (window == null) return;
+        
+        window.Close();
     }
 
     #endregion
