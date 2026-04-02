@@ -18,6 +18,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ProMedScope.Styles\ProMedScope.Styles.csproj" />
     <ProjectReference Include="..\ProMedScope.Templates\ProMedScope.Templates.csproj" />
+    <ProjectReference Include="..\ProMedScope.ViewModels\ProMedScope.ViewModels.csproj" />
+    <ProjectReference Include="..\ProMedScope.Views\ProMedScope.Views.csproj" />
   </ItemGroup>
 
 </Project>

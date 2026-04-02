@@ -23,11 +23,23 @@
                     CornerRadius="14"
                     Margin="20,0,20,20">
 
-                <!-- SideMenu -->
-                <sideMenu:PmSideMenu x:Name="SideMenu"
-                                     SelectedIndex="1"
-                                     VerticalAlignment="Center"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
+                    <!-- SideMenu -->
+                    <sideMenu:PmSideMenu 
+                        Grid.Column="0"
+                        x:Name="SideMenu"
+                        SelectedIndex="1"
+                        VerticalAlignment="Center"/>
+
+                    <!-- Content -->
+                    <ContentPresenter Grid.Column="1"
+                                      Content="{Binding CurrentView}"/>
+                </Grid>
             </Border>
         </Grid>
     </ControlTemplate>

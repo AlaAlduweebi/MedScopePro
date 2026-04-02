@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using ProMedScope.ViewModels;
+using System.Windows;
 
 namespace ProMedScope
 {
@@ -10,6 +11,7 @@ namespace ProMedScope
         public MainView()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
     }
 }

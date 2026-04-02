@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProMedScope.Views\ProMedScope.Views.csproj" />
+    <ProjectReference Include="..\ProMedScope.ViewModels\ProMedScope.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

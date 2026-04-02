@@ -2,6 +2,14 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:ProMedScope"
+             xmlns:vmDashboard="clr-namespace:ProMedScope.ViewModels.Dashboard;assembly=ProMedScope.ViewModels"
+             xmlns:vmPatient="clr-namespace:ProMedScope.ViewModels.Patient;assembly=ProMedScope.ViewModels"
+             xmlns:vmReports="clr-namespace:ProMedScope.ViewModels.Reports;assembly=ProMedScope.ViewModels"
+             xmlns:vmSettings="clr-namespace:ProMedScope.ViewModels.Settings;assembly=ProMedScope.ViewModels"
+             xmlns:vDashboard="clr-namespace:ProMedScope.Views.Dashboard;assembly=ProMedScope.Views"
+             xmlns:vPatient="clr-namespace:ProMedScope.Views.Patient;assembly=ProMedScope.Views"
+             xmlns:vReports="clr-namespace:ProMedScope.Views.Reports;assembly=ProMedScope.Views"
+             xmlns:vSettings="clr-namespace:ProMedScope.Views.Settings;assembly=ProMedScope.Views"
              StartupUri="MainView.xaml">
     <Application.Resources>
         <ResourceDictionary>
@@ -11,6 +19,23 @@
                 <ResourceDictionary Source="/ProMedScope.Templates;component/_Core/Register/LookAndFeel.xaml" />
                 <ResourceDictionary Source="/ProMedScope.Templates;component/_Core/Register/TargetTypes.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type vmDashboard:DashboardViewModel}">
+                <vDashboard:DashboardView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vmPatient:PatientViewModel}">
+                <vPatient:PatientView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vmReports:ReportsViewModel}">
+                <vReports:ReportsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vmSettings:SettingsViewModel}">
+                <vSettings:SettingsView/>
+            </DataTemplate>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
