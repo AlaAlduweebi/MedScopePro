@@ -23,6 +23,10 @@
         <ResourceDictionary Source="/ProMedScope.Styles;component/_Elements/ContentControl/ContentControlStyle.xaml" />
         <ResourceDictionary Source="/ProMedScope.Styles;component/MainView/MainViewStyle.xaml" />
 
+        <!-- Workspace -->
+        <ResourceDictionary Source="/ProMedScope.Styles;component/Workspace/Item/WorkspaceItemStyle.xaml" />
+        <ResourceDictionary Source="/ProMedScope.Styles;component/Workspace/WorkspaceStyle.xaml" />
+        
         <!-- SideMenu -->
         <ResourceDictionary Source="/ProMedScope.Styles;component/SideMenu/Button/SideMenuButtonStyle.xaml" />
         <ResourceDictionary Source="/ProMedScope.Styles;component/SideMenu/Item/SideMenuItemStyle.xaml" />

@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:workspace="clr-namespace:ProMedScope.Controls.Workspace;assembly=ProMedScope.Controls">
+
+    <!-- WorkspaceStyle -->
+    <Style x:Key="WorkspaceStyle" TargetType="{x:Type workspace:PmWorkspace}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="TabStripPlacement" Value="Top"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type workspace:PmWorkspace}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Tabs -->
+                        <TabPanel Grid.Row="0"
+                                  IsItemsHost="True"
+                                  Margin="0,20,0,0"
+                                  HorizontalAlignment="Center"/>
+
+                        <!-- TabContent -->
+                        <ContentPresenter Grid.Row="1"
+                                          ContentSource="SelectedContent"/>
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
