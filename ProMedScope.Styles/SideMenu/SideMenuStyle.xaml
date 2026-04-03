@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:sideMenu="clr-namespace:ProMedScope.Controls.SideMenu;assembly=ProMedScope.Controls"
-                    xmlns:sideMenuButton="clr-namespace:ProMedScope.Controls.SideMenu._Elements.Button;assembly=ProMedScope.Controls">
+                    xmlns:sideMenuToggleButton="clr-namespace:ProMedScope.Controls.SideMenu._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
     <!-- SideMenuStyle -->
     <Style x:Key="SideMenuStyle" TargetType="{x:Type sideMenu:PmSideMenu}">
@@ -36,7 +36,7 @@
                                           IsItemsHost="True"/>
 
                                 <!-- PowerToggleButton -->
-                                <sideMenuButton:PmSideMenuButton 
+                                <sideMenuToggleButton:PmSideMenuToggleButton 
                                     Grid.Row="1"
                                     x:Name="PowerToggleButton"
                                     ButtonName="Power"

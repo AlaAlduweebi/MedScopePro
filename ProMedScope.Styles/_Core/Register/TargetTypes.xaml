@@ -16,7 +16,7 @@
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls"
                     xmlns:workspaceItem="clr-namespace:ProMedScope.Controls.Workspace._Elements.Item;assembly=ProMedScope.Controls"
                     xmlns:workspace="clr-namespace:ProMedScope.Controls.Workspace;assembly=ProMedScope.Controls"
-                    xmlns:sideMenuButton="clr-namespace:ProMedScope.Controls.SideMenu._Elements.Button;assembly=ProMedScope.Controls"
+                    xmlns:sideMenuToggleButton="clr-namespace:ProMedScope.Controls.SideMenu._Elements.ToggleButton;assembly=ProMedScope.Controls"
                     xmlns:sideMenuItem="clr-namespace:ProMedScope.Controls.SideMenu._Elements.Item;assembly=ProMedScope.Controls"
                     xmlns:sideMenu="clr-namespace:ProMedScope.Controls.SideMenu;assembly=ProMedScope.Controls"
                     xmlns:titleBarToggleButton="clr-namespace:ProMedScope.Controls.TitleBar._Elements.ToggleButton;assembly=ProMedScope.Controls">
@@ -44,7 +44,7 @@
     <Style TargetType="{x:Type workspace:PmWorkspace}" BasedOn="{StaticResource WorkspaceStyle}" />
     
     <!-- SideMenu -->
-    <Style TargetType="{x:Type sideMenuButton:PmSideMenuButton}" BasedOn="{StaticResource SideMenuButtonStyle}" />
+    <Style TargetType="{x:Type sideMenuToggleButton:PmSideMenuToggleButton}" BasedOn="{StaticResource SideMenuToggleButtonStyle}" />
     <Style TargetType="{x:Type sideMenuItem:PmSideMenuItem}" BasedOn="{StaticResource SideMenuItemStyle}" />
     <Style TargetType="{x:Type sideMenu:PmSideMenu}" BasedOn="{StaticResource SideMenuStyle}" />
 
