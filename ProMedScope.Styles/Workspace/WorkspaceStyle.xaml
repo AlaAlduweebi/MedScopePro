@@ -17,10 +17,15 @@
                         </Grid.RowDefinitions>
 
                         <!-- Tabs -->
-                        <TabPanel Grid.Row="0"
-                                  IsItemsHost="True"
-                                  HorizontalAlignment="Center"/>
-
+                        <Border Grid.Row="0"
+                                Background="White"
+                                CornerRadius="20"
+                                Height="36"
+                                HorizontalAlignment="Center">
+                            
+                            <TabPanel IsItemsHost="True"/>
+                        </Border>
+                        
                         <!-- TabContent -->
                         <ContentPresenter Grid.Row="1"
                                           ContentSource="SelectedContent"/>

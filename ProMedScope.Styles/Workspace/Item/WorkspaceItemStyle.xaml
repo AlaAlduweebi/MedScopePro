@@ -4,7 +4,7 @@
 
     <!-- WorkspaceItemStyle -->
     <Style x:Key="WorkspaceItemStyle" TargetType="{x:Type workspaceItem:PmWorkspaceItem}">
-        <Setter Property="Height" Value="70"/>
+        <Setter Property="Height" Value="36"/>
         <Setter Property="Background" Value="White"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
@@ -22,7 +22,7 @@
 
                             <!-- Titel -->
                             <ContentPresenter VerticalAlignment="Center"
-                                              Margin="10,0"
+                                              Margin="20,0,0,0"
                                               RecognizesAccessKey="True"/>
 
                             <!-- Close Button -->
@@ -30,7 +30,7 @@
                                     Content="✕"
                                     FontSize="12"
                                     VerticalAlignment="Center"
-                                    Margin="8,0,10,0"/>
+                                    Margin="20,0,20,0"/>
                         </Grid>
                     </Border>
                     <ControlTemplate.Triggers>
