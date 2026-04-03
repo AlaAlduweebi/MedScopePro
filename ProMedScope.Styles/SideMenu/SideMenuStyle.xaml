@@ -46,7 +46,7 @@
 
                         <!-- TabContent -->
                         <ContentPresenter Grid.Column="1"
-                                          Content="{Binding SelectedItem.View, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                          Content="{TemplateBinding SelectedContent}"/>
 
                     </Grid>
                 </ControlTemplate>
