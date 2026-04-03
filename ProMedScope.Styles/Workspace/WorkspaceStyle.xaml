@@ -19,7 +19,6 @@
                         <!-- Tabs -->
                         <TabPanel Grid.Row="0"
                                   IsItemsHost="True"
-                                  Margin="0,20,0,0"
                                   HorizontalAlignment="Center"/>
 
                         <!-- TabContent -->

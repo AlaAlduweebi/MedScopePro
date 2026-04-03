@@ -4,12 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProMedScope.Views.Patient"
+             xmlns:workspace="clr-namespace:ProMedScope.Controls.Workspace;assembly=ProMedScope.Controls" 
+             xmlns:patient="clr-namespace:ProMedScope.ViewModels.Patient;assembly=ProMedScope.ViewModels"
+             d:DataContext="{d:DesignInstance Type=patient:PatientViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock Text="Patient View" 
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center"
-                   FontSize="20"/>
+        <workspace:PmWorkspace ItemsSource="{Binding OpenPatients}"/>
     </Grid>
 </UserControl>

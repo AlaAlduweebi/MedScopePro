@@ -22,7 +22,8 @@
                                 Background="White"
                                 Margin="20,0,0,0"
                                 CornerRadius="40"
-                                Width="70" Height="460">
+                                Width="70" Height="460"
+                                VerticalAlignment="Center">
 
                             <Grid VerticalAlignment="Center">
                                 <Grid.RowDefinitions>
@@ -46,6 +47,7 @@
 
                         <!-- TabContent -->
                         <ContentPresenter Grid.Column="1"
+                                          Margin="0,20,0,0"
                                           Content="{TemplateBinding SelectedContent}"/>
 
                     </Grid>
