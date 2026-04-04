@@ -14,6 +14,7 @@
                     xmlns:textBox="clr-namespace:ProMedScope.Controls._Elements.TextBox;assembly=ProMedScope.Controls"
                     xmlns:toggleButton="clr-namespace:ProMedScope.Controls._Elements.ToggleButton;assembly=ProMedScope.Controls"
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls"
+                    xmlns:workspaceItemButton="clr-namespace:ProMedScope.Controls.Workspace._Elements.Item._Elements.Button;assembly=ProMedScope.Controls"
                     xmlns:workspaceItem="clr-namespace:ProMedScope.Controls.Workspace._Elements.Item;assembly=ProMedScope.Controls"
                     xmlns:workspace="clr-namespace:ProMedScope.Controls.Workspace;assembly=ProMedScope.Controls"
                     xmlns:sideMenuToggleButton="clr-namespace:ProMedScope.Controls.SideMenu._Elements.ToggleButton;assembly=ProMedScope.Controls"
@@ -40,6 +41,7 @@
     <Style TargetType="{x:Type icon:PmIcon}" BasedOn="{StaticResource IconStyle}" />
 
     <!-- Workspace -->
+    <Style TargetType="{x:Type workspaceItemButton:PmWorkspaceItemButton}" BasedOn="{StaticResource WorkspaceItemButtonStyle}" />
     <Style TargetType="{x:Type workspaceItem:PmWorkspaceItem}" BasedOn="{StaticResource WorkspaceItemStyle}" />
     <Style TargetType="{x:Type workspace:PmWorkspace}" BasedOn="{StaticResource WorkspaceStyle}" />
     

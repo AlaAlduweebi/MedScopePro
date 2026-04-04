@@ -24,6 +24,7 @@
         <ResourceDictionary Source="/ProMedScope.Styles;component/MainView/MainViewStyle.xaml" />
 
         <!-- Workspace -->
+        <ResourceDictionary Source="/ProMedScope.Styles;component/Workspace/Item/Button/SideMenuToggleButtonStyle.xaml" />
         <ResourceDictionary Source="/ProMedScope.Styles;component/Workspace/Item/WorkspaceItemStyle.xaml" />
         <ResourceDictionary Source="/ProMedScope.Styles;component/Workspace/WorkspaceStyle.xaml" />
         

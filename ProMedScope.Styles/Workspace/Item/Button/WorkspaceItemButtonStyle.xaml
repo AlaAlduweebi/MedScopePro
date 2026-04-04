@@ -1,35 +1,35 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:sideMenuToggleButton="clr-namespace:ProMedScope.Controls.SideMenu._Elements.ToggleButton;assembly=ProMedScope.Controls"
+                    xmlns:workspaceItemButton="clr-namespace:ProMedScope.Controls.Workspace._Elements.Item._Elements.Button;assembly=ProMedScope.Controls"
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls">
 
-    <!-- SideMenuToggleButtonStyle -->
-    <Style x:Key="SideMenuToggleButtonStyle" TargetType="{x:Type sideMenuToggleButton:PmSideMenuToggleButton}">
+    <!-- WorkspaceItemButtonStyle -->
+    <Style x:Key="WorkspaceItemButtonStyle" TargetType="{x:Type workspaceItemButton:PmWorkspaceItemButton}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type sideMenuToggleButton:PmSideMenuToggleButton}">
+                <ControlTemplate TargetType="{x:Type workspaceItemButton:PmWorkspaceItemButton}">
                     <Border x:Name="Border"
-					        Background="{TemplateBinding Background}"
-					        BorderBrush="{TemplateBinding BorderBrush}"
-					        BorderThickness="{TemplateBinding BorderThickness}">
+		                    Background="{TemplateBinding Background}"
+		                    BorderBrush="{TemplateBinding BorderBrush}"
+		                    BorderThickness="{TemplateBinding BorderThickness}">
 
-                            <!-- Icon -->
+                        <!-- Icon -->
                         <icon:PmIcon Grid.Column="0"
                                      x:Name="Icon"
-						             Height="32" Width="32"
-						             IconMaterial="{TemplateBinding Icon}"
-						             Foreground="{TemplateBinding Foreground}"/>
-                        
+			                         Height="20" Width="20"
+			                         IconMaterial="{TemplateBinding Icon}"
+			                         Foreground="{TemplateBinding Foreground}"/>
+
                     </Border>
                     <ControlTemplate.Triggers>
 
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Foreground" Value="#FF3A36" />
+                            <Setter Property="Foreground"  Value="#FF3A36" />
                         </Trigger>
-                        
+
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
