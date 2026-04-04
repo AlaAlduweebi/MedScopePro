@@ -1,6 +1,6 @@
 ﻿using ProMedScope.Controls.Workspace._Elements.Item._Elements.Button;
 using ProMedScope.Controls._Elements.Button.Generic;
-using ProMedScope.Controls.Icon;
+using ProMedScope.Controls.Icon.Enums;
 
 namespace ProMedScope.Controls._Elements.Button.Metadata;
 
@@ -13,7 +13,7 @@ public static class ButtonMetadata
     /// Enthält Metadaten wie Icon, Tooltip und Beschriftung für einen Button.
     /// </summary>
     public record ButtonMeta(
-        PmIconEnum icon = PmIconEnum.None,
+        IconEnum icon = IconEnum.None,
         string? label = null,
         string? tooltip = null
     );
@@ -25,7 +25,7 @@ public static class ButtonMetadata
     {
         // Workspace
         [PmWorkspaceItemButtonEnum.Close] = new ButtonMeta(
-                icon: PmIconEnum.Cancel,
+                icon: IconEnum.Cancel,
                 tooltip: "Schließen"
             ),
     };

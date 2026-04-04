@@ -1,5 +1,5 @@
 ﻿using ProMedScope.Controls._Elements.ToggleButton.Metadata;
-using ProMedScope.Controls.Icon;
+using ProMedScope.Controls.Icon.Enums;
 using System.Windows;
 
 namespace ProMedScope.Controls._Elements.ToggleButton.Generic;
@@ -16,7 +16,7 @@ public abstract class PmToggleButtonGeneric<TEnum> : PmToggleButton where TEnum 
         DependencyProperty.Register(nameof(ButtonName), typeof(TEnum), typeof(PmToggleButtonGeneric<TEnum>), new PropertyMetadata(default(TEnum)));
 
     public static readonly DependencyProperty IconProperty =
-        DependencyProperty.Register(nameof(Icon), typeof(PmIconEnum), typeof(PmToggleButtonGeneric<TEnum>), new PropertyMetadata(default(PmIconEnum)));
+        DependencyProperty.Register(nameof(Icon), typeof(IconEnum), typeof(PmToggleButtonGeneric<TEnum>), new PropertyMetadata(default(IconEnum)));
 
     #endregion
 
@@ -46,9 +46,9 @@ public abstract class PmToggleButtonGeneric<TEnum> : PmToggleButton where TEnum 
     /// <summary>
     /// Repräsentiert das Symbol.
     /// </summary>
-    public PmIconEnum Icon
+    public IconEnum Icon
     {
-        get { return (PmIconEnum)GetValue(IconProperty); }
+        get { return (IconEnum)GetValue(IconProperty); }
         set { SetValue(IconProperty, value); }
     }
 

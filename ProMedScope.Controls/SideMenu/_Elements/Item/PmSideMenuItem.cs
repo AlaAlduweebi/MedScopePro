@@ -1,5 +1,5 @@
 ﻿using ProMedScope.Controls._Elements.TabControl.TabItem;
-using ProMedScope.Controls.Icon;
+using ProMedScope.Controls.Icon.Enums;
 using System.Windows;
 
 namespace ProMedScope.Controls.SideMenu._Elements.Item;
@@ -15,7 +15,7 @@ public class PmSideMenuItem : PmTabControlTabItem
         DependencyProperty.Register(nameof(MenuName), typeof(PmSideMenuItemEnum), typeof(PmSideMenuItem));
 
     public static readonly DependencyProperty IconProperty =
-        DependencyProperty.Register(nameof(Icon), typeof(PmIconEnum), typeof(PmSideMenuItem), new PropertyMetadata(PmIconEnum.None));
+        DependencyProperty.Register(nameof(Icon), typeof(IconEnum), typeof(PmSideMenuItem), new PropertyMetadata(IconEnum.None));
 
     public static readonly DependencyProperty ViewProperty =
         DependencyProperty.Register(nameof(View), typeof(object), typeof(PmSideMenuItem));
@@ -36,9 +36,9 @@ public class PmSideMenuItem : PmTabControlTabItem
     /// <summary>
     /// Definiert das Symbol des Menüeintrags.
     /// </summary>
-    public PmIconEnum Icon
+    public IconEnum Icon
     {
-        get => (PmIconEnum)GetValue(IconProperty);
+        get => (IconEnum)GetValue(IconProperty);
         set => SetValue(IconProperty, value);
     }
 

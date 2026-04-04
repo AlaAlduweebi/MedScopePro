@@ -1,9 +1,9 @@
-﻿namespace ProMedScope.Controls.Icon
+﻿namespace ProMedScope.Controls.Icon.Enums
 {
     /// <summary>
     /// Definiert die verfügbaren Symbole.
     /// </summary>
-    public enum PmIconEnum
+    public enum IconEnum
     {
         None,
         DarkMode,

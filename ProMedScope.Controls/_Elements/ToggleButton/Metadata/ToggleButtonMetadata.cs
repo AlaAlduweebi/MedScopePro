@@ -1,7 +1,7 @@
 ﻿using ProMedScope.Controls.SideMenu._Elements.ToggleButton;
 using ProMedScope.Controls._Elements.ToggleButton.Generic;
 using ProMedScope.Controls.TitleBar._Elements;
-using ProMedScope.Controls.Icon;
+using ProMedScope.Controls.Icon.Enums;
 
 namespace ProMedScope.Controls._Elements.ToggleButton.Metadata;
 
@@ -14,7 +14,7 @@ public static class ToggleButtonMetadata
     /// Enthält Metadaten wie Icon, Tooltip und Beschriftung für einen ToggleButton.
     /// </summary>
     public record ToggleButtonMeta(
-        PmIconEnum? icon = null,
+        IconEnum? icon = null,
         string? label = null,
         string? tooltip = null,
         IsCheckedMeta? isChecked = null
@@ -24,7 +24,7 @@ public static class ToggleButtonMetadata
     /// Metadaten für den aktivierten Zustand.
     /// </summary>
     public record IsCheckedMeta(
-        PmIconEnum? icon = null,
+        IconEnum? icon = null,
         string? label = null,
         string? tooltip = null
     );
@@ -36,23 +36,23 @@ public static class ToggleButtonMetadata
     {
         // SideMenu
         [PmSideMenuToggleButtonEnum.Power] = new ToggleButtonMeta(
-                icon: PmIconEnum.Power,
+                icon: IconEnum.Power,
                 tooltip: "Ein/Aus"
             ),
 
         // TitleBar
         [PmTitleBarToggleButtonEnum.Design] = new ToggleButtonMeta(
-                icon: PmIconEnum.DarkMode,
+                icon: IconEnum.DarkMode,
                 tooltip: "Dunkles Design aktivieren",
                 isChecked: new IsCheckedMeta(
-                    icon: PmIconEnum.LightMode,
+                    icon: IconEnum.LightMode,
                     tooltip: "Helles Design aktivieren"
                 )),
         [PmTitleBarToggleButtonEnum.Language] = new ToggleButtonMeta(
-                icon: PmIconEnum.DarkMode,
+                icon: IconEnum.DarkMode,
                 tooltip: "Englich",
                 isChecked: new IsCheckedMeta(
-                    icon: PmIconEnum.LightMode,
+                    icon: IconEnum.LightMode,
                     tooltip: "Deutsch"
                 )),
         [PmTitleBarToggleButtonEnum.Profile] = new ToggleButtonMeta(
@@ -76,7 +76,7 @@ public static class ToggleButtonMetadata
 
         var toggle = toggleButton.IsChecked == true ? meta.isChecked : null;
 
-        toggleButton.Icon = toggle?.icon ?? meta.icon ?? PmIconEnum.None;
+        toggleButton.Icon = toggle?.icon ?? meta.icon ?? IconEnum.None;
         toggleButton.Content = toggle?.label ?? meta.label ?? toggleButton.Content;
         toggleButton.ToolTip = toggle?.tooltip ?? meta.tooltip;
     }

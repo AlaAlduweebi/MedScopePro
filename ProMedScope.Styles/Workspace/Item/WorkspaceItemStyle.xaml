@@ -32,7 +32,7 @@
                                 x:Name="CloseButton"
                                 ButtonName="Close"
                                 VerticalAlignment="Center"
-                                Margin="20,0,20,0"/>
+                                Margin="10,0,20,0"/>
                             
                         </Grid>
                     </Border>

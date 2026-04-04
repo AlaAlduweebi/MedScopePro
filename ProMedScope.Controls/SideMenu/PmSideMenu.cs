@@ -4,6 +4,7 @@ using ProMedScope.ViewModels.Dashboard;
 using ProMedScope.ViewModels.Settings;
 using ProMedScope.ViewModels.Patient;
 using ProMedScope.ViewModels.Reports;
+using ProMedScope.Controls.Icon.Enums;
 
 namespace ProMedScope.Controls.SideMenu;
 
@@ -25,7 +26,7 @@ public class PmSideMenu : PmTabControl
         Items.Add(new PmSideMenuItem
         {
             MenuName = PmSideMenuItemEnum.Dashboard,
-            Icon = Icon.PmIconEnum.Dashboard,
+            Icon = IconEnum.Dashboard,
             ToolTip = "Dashboard",
             Content = new DashboardViewModel(),
         });
@@ -33,7 +34,7 @@ public class PmSideMenu : PmTabControl
         Items.Add(new PmSideMenuItem
         {
             MenuName = PmSideMenuItemEnum.Patient,
-            Icon = Icon.PmIconEnum.Person,
+            Icon = IconEnum.Person,
             ToolTip = "Patient",
             Content = new PatientViewModel(),
         });
@@ -41,7 +42,7 @@ public class PmSideMenu : PmTabControl
         Items.Add(new PmSideMenuItem
         {
             MenuName = PmSideMenuItemEnum.Reports,
-            Icon = Icon.PmIconEnum.Assignment,
+            Icon = IconEnum.Assignment,
             ToolTip = "Berichte",
             Content = new ReportsViewModel(),
         });
@@ -49,7 +50,7 @@ public class PmSideMenu : PmTabControl
         Items.Add(new PmSideMenuItem
         {
             MenuName = PmSideMenuItemEnum.Settings,
-            Icon = Icon.PmIconEnum.Settings,
+            Icon = IconEnum.Settings,
             ToolTip = "Einstellungen",
             Content = new SettingsViewModel(),
         });

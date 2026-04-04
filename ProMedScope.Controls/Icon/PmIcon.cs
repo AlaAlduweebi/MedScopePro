@@ -1,4 +1,5 @@
 ﻿using ProMedScope.Controls._Elements.ContentControl;
+using ProMedScope.Controls.Icon.Enums;
 using System.Windows.Media;
 using System.Windows;
 
@@ -12,7 +13,10 @@ public class PmIcon : PmContentControl
     #region Dependency Properties
 
     public static readonly DependencyProperty IconMaterialProperty =
-        DependencyProperty.Register(nameof(IconMaterial), typeof(PmIconEnum), typeof(PmIcon), new PropertyMetadata(default(PmIconEnum), OnIconVisualChanged));
+        DependencyProperty.Register(nameof(IconMaterial), typeof(IconEnum), typeof(PmIcon), new PropertyMetadata(default(IconEnum), OnIconVisualChanged));
+
+    public static readonly DependencyProperty IconStyleProperty =
+    DependencyProperty.Register(nameof(IconStyle), typeof(IconStyleEnum), typeof(PmIcon), new PropertyMetadata(default(IconStyleEnum), OnIconVisualChanged));
 
     public static readonly DependencyProperty RenderedDrawingImageProperty =
         DependencyProperty.Register(nameof(RenderedDrawingImage), typeof(ImageSource), typeof(PmIcon));
@@ -24,10 +28,19 @@ public class PmIcon : PmContentControl
     /// <summary>
     /// Repräsentiert das zentrale Symbol.
     /// </summary>
-    public PmIconEnum IconMaterial
+    public IconEnum IconMaterial
     {
-        get { return (PmIconEnum)GetValue(IconMaterialProperty); }
+        get { return (IconEnum)GetValue(IconMaterialProperty); }
         set { SetValue(IconMaterialProperty, value); }
+    }
+
+    /// <summary>
+    /// Definiert den Stil des Icons, entweder als Outline oder Fill.
+    /// </summary>
+    public IconStyleEnum IconStyle
+    {
+        get { return (IconStyleEnum)GetValue(IconStyleProperty); }
+        set { SetValue(IconStyleProperty, value); }
     }
 
     /// <summary>
@@ -75,13 +88,15 @@ public class PmIcon : PmContentControl
     /// </summary>
     private void UpdateGeometryPaths()
     {
-        if (IconMaterial == PmIconEnum.None)
+        if (IconMaterial == IconEnum.None)
         {
             RenderedDrawingImage = null;
             return;
         }
 
-        var key = $"{IconMaterial}IconPath";
+        var key = IconStyle == IconStyleEnum.Outline
+            ? $"{IconMaterial}IconPath"
+            : $"{IconMaterial}FillIconPath";
 
         var geometry = TryFindResource(key) as Geometry;
         if (geometry == null)
