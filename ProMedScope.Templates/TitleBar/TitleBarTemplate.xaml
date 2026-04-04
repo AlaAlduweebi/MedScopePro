@@ -4,7 +4,7 @@
                     xmlns:titleBarToggleButton="clr-namespace:ProMedScope.Controls.TitleBar._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
     <!-- TitleBarTemplate -->
-    <ControlTemplate x:Key="TitleBarTemplate" TargetType="{x:Type titleBar:PmTitleBar}">
+    <ControlTemplate x:Key="TitleBarTemplate" TargetType="{x:Type titleBar:TitleBarControl}">
         <Border Background="White"
                 Padding="30,0,30,0">
             <Grid>
@@ -27,13 +27,13 @@
                             VerticalAlignment="Center">
 
                     <!-- DesignToggleButton -->
-                    <titleBarToggleButton:PmTitleBarToggleButton
+                    <titleBarToggleButton:TitleBarToggleButtonControl
                         x:Name="DesignToggleButton"
                         ButtonName="Design"
                         Margin="0,0,20,0"/>
 
                     <!-- LanguageToggleButton -->
-                    <titleBarToggleButton:PmTitleBarToggleButton
+                    <titleBarToggleButton:TitleBarToggleButtonControl
                         x:Name="LanguageToggleButton"
                         ButtonName="Language"
                         Margin="0,0,20,0"/>
@@ -46,7 +46,7 @@
                             VerticalAlignment="Center"/>
 
                     <!-- ProfileToggleButton -->
-                    <titleBarToggleButton:PmTitleBarToggleButton
+                    <titleBarToggleButton:TitleBarToggleButtonControl
                         x:Name="ProfileToggleButton"
                         ButtonName="Profile"/>
                     

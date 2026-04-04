@@ -3,14 +3,14 @@
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls">
 
     <!-- IconStyle -->
-    <Style x:Key="IconStyle" TargetType="{x:Type icon:PmIcon}">
+    <Style x:Key="IconStyle" TargetType="{x:Type icon:IconControl}">
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Margin" Value="2"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type icon:PmIcon}">
+                <ControlTemplate TargetType="{x:Type icon:IconControl}">
                     <Border x:Name="Border" 
 							Background="Transparent">
 

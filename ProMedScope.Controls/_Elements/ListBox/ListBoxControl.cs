@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefinierte ListBox.
 /// </summary>
-public class PmListBox : System.Windows.Controls.ListBox
+public class ListBoxControl : System.Windows.Controls.ListBox
 {
 }

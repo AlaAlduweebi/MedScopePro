@@ -8,18 +8,18 @@ namespace ProMedScope.Controls.Icon;
 /// <summary>
 /// Benutzerdefiniertes Icon.
 /// </summary>	
-public class PmIcon : PmContentControl
+public class IconControl : ContentControl
 {
     #region Dependency Properties
 
     public static readonly DependencyProperty IconMaterialProperty =
-        DependencyProperty.Register(nameof(IconMaterial), typeof(IconEnum), typeof(PmIcon), new PropertyMetadata(default(IconEnum), OnIconVisualChanged));
+        DependencyProperty.Register(nameof(IconMaterial), typeof(IconEnum), typeof(IconControl), new PropertyMetadata(default(IconEnum), OnIconVisualChanged));
 
     public static readonly DependencyProperty IconStyleProperty =
-    DependencyProperty.Register(nameof(IconStyle), typeof(IconStyleEnum), typeof(PmIcon), new PropertyMetadata(default(IconStyleEnum), OnIconVisualChanged));
+    DependencyProperty.Register(nameof(IconStyle), typeof(IconStyleEnum), typeof(IconControl), new PropertyMetadata(default(IconStyleEnum), OnIconVisualChanged));
 
     public static readonly DependencyProperty RenderedDrawingImageProperty =
-        DependencyProperty.Register(nameof(RenderedDrawingImage), typeof(ImageSource), typeof(PmIcon));
+        DependencyProperty.Register(nameof(RenderedDrawingImage), typeof(ImageSource), typeof(IconControl));
 
     #endregion
 
@@ -57,9 +57,9 @@ public class PmIcon : PmContentControl
     /// <summary>
     /// Reagiert auf Änderungen der Foreground-Farbe und aktualisiert das Icon.
     /// </summary>
-    static PmIcon()
+    static IconControl()
     {
-        ForegroundProperty.OverrideMetadata(typeof(PmIcon),
+        ForegroundProperty.OverrideMetadata(typeof(IconControl),
             new FrameworkPropertyMetadata(Brushes.Black, OnIconVisualChanged));
     }
 
@@ -79,7 +79,7 @@ public class PmIcon : PmContentControl
     /// </summary>
     private static void OnIconVisualChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
-        if (d is PmIcon icon)
+        if (d is IconControl icon)
             icon.UpdateGeometryPaths();
     }
 

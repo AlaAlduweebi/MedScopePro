@@ -3,7 +3,7 @@
     /// <summary>
     /// Definiert die Einträge des Seitenmenüs.
     /// </summary>
-    public enum PmSideMenuItemEnum
+    public enum SideMenuItemEnum
     {
         Dashboard,
         Patient,

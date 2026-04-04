@@ -3,7 +3,7 @@
 /// <summary>
 /// Definiert die ToggleButton-Typen, die in dem SideMenu verwendet werden.
 /// </summary>
-public enum PmSideMenuToggleButtonEnum
+public enum SideMenuToggleButtonEnum
 {
     Power
 }

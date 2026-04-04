@@ -5,6 +5,6 @@ namespace ProMedScope.Controls.Workspace._Elements.Item;
 /// <summary>
 /// Repräsentiert ein einzelnes Workspace-Tab-Item.
 /// </summary>
-public class PmWorkspaceItem : PmTabControlTabItem
+public class WorkspaceItemControl : TabItemControl
 {
 }

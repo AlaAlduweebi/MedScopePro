@@ -3,12 +3,12 @@
                     xmlns:scrollViewer="clr-namespace:ProMedScope.Controls._Elements.ScrollViewer;assembly=ProMedScope.Controls">
 
     <!-- ScrollViewerStyle -->
-    <Style x:Key="ScrollViewerStyle" TargetType="{x:Type scrollViewer:PmScrollViewer}">
+    <Style x:Key="ScrollViewerStyle" TargetType="{x:Type scrollViewer:ScrollViewerControl}">
         <Setter Property="Background" Value="White" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type scrollViewer:PmScrollViewer}">
+                <ControlTemplate TargetType="{x:Type scrollViewer:ScrollViewerControl}">
                 
                 </ControlTemplate>
             </Setter.Value>

@@ -3,7 +3,7 @@
                     xmlns:textBlock="clr-namespace:ProMedScope.Controls._Elements.TextBlock;assembly=ProMedScope.Controls">
 
     <!-- TextBlockStyle -->
-    <Style x:Key="TextBlockStyle" TargetType="{x:Type textBlock:PmTextBlock}">
+    <Style x:Key="TextBlockStyle" TargetType="{x:Type textBlock:TextBlockControl}">
         <Setter Property="Background" Value="White" />
         <Setter Property="Foreground" Value="Black"/>
     </Style>

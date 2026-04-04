@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefiniertes ListView.
 /// </summary>
-public class PmListView : System.Windows.Controls.ListView
+public class ListViewControl : System.Windows.Controls.ListView
 {
 }

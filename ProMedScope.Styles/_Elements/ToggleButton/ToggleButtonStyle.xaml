@@ -3,12 +3,12 @@
                     xmlns:toggleButton="clr-namespace:ProMedScope.Controls._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
     <!-- ToggleButtonStyle -->
-    <Style x:Key="ToggleButtonStyle" TargetType="{x:Type toggleButton:PmToggleButton}">
+    <Style x:Key="ToggleButtonStyle" TargetType="{x:Type toggleButton:ToggleButtonControl}">
         <Setter Property="Background" Value="White" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type toggleButton:PmToggleButton}">
+                <ControlTemplate TargetType="{x:Type toggleButton:ToggleButtonControl}">
                 
                 </ControlTemplate>
             </Setter.Value>

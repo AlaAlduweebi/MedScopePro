@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefinierte TextBox.
 /// </summary>
-public class PmTextBox : System.Windows.Controls.TextBox
+public class TextBoxControl : System.Windows.Controls.TextBox
 {
 }

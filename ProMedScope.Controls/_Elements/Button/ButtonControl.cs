@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefinierter Button.
 /// </summary>
-public class PmButton : System.Windows.Controls.Button
+public class ButtonControl : System.Windows.Controls.Button
 {
 }

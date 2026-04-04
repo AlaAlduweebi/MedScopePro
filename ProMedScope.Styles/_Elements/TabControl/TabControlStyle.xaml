@@ -3,12 +3,12 @@
                     xmlns:tabControl="clr-namespace:ProMedScope.Controls._Elements.TabControl;assembly=ProMedScope.Controls">
 
     <!-- TabControlStyle -->
-    <Style x:Key="TabControlStyle" TargetType="{x:Type tabControl:PmTabControl}">
+    <Style x:Key="TabControlStyle" TargetType="{x:Type tabControl:TabControl}">
         <Setter Property="Background" Value="White" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type tabControl:PmTabControl}">
+                <ControlTemplate TargetType="{x:Type tabControl:TabControl}">
                 
                 </ControlTemplate>
             </Setter.Value>

@@ -7,18 +7,18 @@ namespace ProMedScope.Controls.SideMenu._Elements.Item;
 /// <summary>
 /// Repräsentiert einen Eintrag im Seitenmenü.
 /// </summary>
-public class PmSideMenuItem : PmTabControlTabItem
+public class SideMenuItemControl : TabItemControl
 {
     #region Dependency Properties
 
     public static readonly DependencyProperty MenuNameProperty =
-        DependencyProperty.Register(nameof(MenuName), typeof(PmSideMenuItemEnum), typeof(PmSideMenuItem));
+        DependencyProperty.Register(nameof(MenuName), typeof(SideMenuItemEnum), typeof(SideMenuItemControl));
 
     public static readonly DependencyProperty IconProperty =
-        DependencyProperty.Register(nameof(Icon), typeof(IconEnum), typeof(PmSideMenuItem), new PropertyMetadata(IconEnum.None));
+        DependencyProperty.Register(nameof(Icon), typeof(IconEnum), typeof(SideMenuItemControl), new PropertyMetadata(IconEnum.None));
 
     public static readonly DependencyProperty ViewProperty =
-        DependencyProperty.Register(nameof(View), typeof(object), typeof(PmSideMenuItem));
+        DependencyProperty.Register(nameof(View), typeof(object), typeof(SideMenuItemControl));
 
     #endregion
 
@@ -27,9 +27,9 @@ public class PmSideMenuItem : PmTabControlTabItem
     /// <summary>
     /// Definiert den Seitentyp des Menüeintrags.
     /// </summary>
-    public PmSideMenuItemEnum MenuName
+    public SideMenuItemEnum MenuName
     {
-        get => (PmSideMenuItemEnum)GetValue(MenuNameProperty);
+        get => (SideMenuItemEnum)GetValue(MenuNameProperty);
         set => SetValue(MenuNameProperty, value);
     }
 

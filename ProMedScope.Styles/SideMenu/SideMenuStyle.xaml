@@ -4,13 +4,13 @@
                     xmlns:sideMenuToggleButton="clr-namespace:ProMedScope.Controls.SideMenu._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
     <!-- SideMenuStyle -->
-    <Style x:Key="SideMenuStyle" TargetType="{x:Type sideMenu:PmSideMenu}">
+    <Style x:Key="SideMenuStyle" TargetType="{x:Type sideMenu:SideMenuControl}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="TabStripPlacement" Value="Left"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type sideMenu:PmSideMenu}">
+                <ControlTemplate TargetType="{x:Type sideMenu:SideMenuControl}">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
@@ -36,7 +36,7 @@
                                           IsItemsHost="True"/>
 
                                 <!-- PowerToggleButton -->
-                                <sideMenuToggleButton:PmSideMenuToggleButton 
+                                <sideMenuToggleButton:SideMenuToggleButtonControl 
                                     Grid.Row="1"
                                     x:Name="PowerToggleButton"
                                     ButtonName="Power"

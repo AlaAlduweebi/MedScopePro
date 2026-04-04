@@ -3,13 +3,13 @@
                     xmlns:workspace="clr-namespace:ProMedScope.Controls.Workspace;assembly=ProMedScope.Controls">
 
     <!-- WorkspaceStyle -->
-    <Style x:Key="WorkspaceStyle" TargetType="{x:Type workspace:PmWorkspace}">
+    <Style x:Key="WorkspaceStyle" TargetType="{x:Type workspace:WorkspaceControl}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="TabStripPlacement" Value="Top"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type workspace:PmWorkspace}">
+                <ControlTemplate TargetType="{x:Type workspace:WorkspaceControl}">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>

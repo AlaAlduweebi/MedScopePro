@@ -3,12 +3,12 @@
                     xmlns:contentControl="clr-namespace:ProMedScope.Controls._Elements.ContentControl;assembly=ProMedScope.Controls">
 
     <!-- ContentControlStyle -->
-    <Style x:Key="ContentControlStyle" TargetType="{x:Type contentControl:PmContentControl}">
+    <Style x:Key="ContentControlStyle" TargetType="{x:Type contentControl:ContentControl}">
         <Setter Property="Background" Value="White" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type contentControl:PmContentControl}">
+                <ControlTemplate TargetType="{x:Type contentControl:ContentControl}">
                 
                 </ControlTemplate>
             </Setter.Value>

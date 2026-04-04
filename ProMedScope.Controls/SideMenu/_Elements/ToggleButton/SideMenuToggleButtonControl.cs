@@ -1,12 +1,12 @@
 ﻿using ProMedScope.Controls._Elements.ToggleButton.Generic;
 using System.Windows;
 
-namespace ProMedScope.Controls.TitleBar._Elements.ToggleButton;
+namespace ProMedScope.Controls.SideMenu._Elements.ToggleButton;
 
 /// <summary>
-/// /// Benutzerdefinierter ToggleButton für die TitleBar.
+/// /// Benutzerdefinierter ToggleButton für das SideMenu.
 /// </summary>
-public class PmTitleBarToggleButton : PmToggleButtonGeneric<PmTitleBarToggleButtonEnum>
+public class SideMenuToggleButtonControl : ToggleButtonControlGeneric<SideMenuToggleButtonEnum>
 {
     #region Methoden
 
@@ -18,18 +18,24 @@ public class PmTitleBarToggleButton : PmToggleButtonGeneric<PmTitleBarToggleButt
     {
         switch (ButtonName)
         {
-            case PmTitleBarToggleButtonEnum.Design:
-                break;
-
-            case PmTitleBarToggleButtonEnum.Language:
-                break;
-
-            case PmTitleBarToggleButtonEnum.Profile:
+            case SideMenuToggleButtonEnum.Power:
+                CloseWindow();
                 break;
 
             default:
                 throw new ArgumentOutOfRangeException();
         }
+    }
+
+    /// <summary>
+    /// Schließt das Fenster.
+    /// </summary>
+    public void CloseWindow()
+    {
+        var window = Window.GetWindow(this);
+        if (window == null) return;
+        
+        window.Close();
     }
 
     #endregion

@@ -7,13 +7,13 @@ namespace ProMedScope.Controls.Workspace;
 /// <summary>
 /// Repräsentiert den Workspace-Bereich mit Tabs für geöffnete Inhalte.
 /// </summary>
-public class PmWorkspace : PmTabControl
+public class WorkspaceControl : TabControl
 {
     /// <summary>
     /// Erstellt einen neuen Container für ein Workspace-Element.
     /// </summary>
     protected override DependencyObject GetContainerForItemOverride()
     {
-        return new PmWorkspaceItem();
+        return new WorkspaceItemControl();
     }
 }

@@ -3,12 +3,12 @@
                     xmlns:textBox="clr-namespace:ProMedScope.Controls._Elements.TextBox;assembly=ProMedScope.Controls">
 
     <!-- TextBoxStyle -->
-    <Style x:Key="TextBoxStyle" TargetType="{x:Type textBox:PmTextBox}">
+    <Style x:Key="TextBoxStyle" TargetType="{x:Type textBox:TextBoxControl}">
         <Setter Property="Background" Value="White" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type textBox:PmTextBox}">
+                <ControlTemplate TargetType="{x:Type textBox:TextBoxControl}">
                 
                 </ControlTemplate>
             </Setter.Value>

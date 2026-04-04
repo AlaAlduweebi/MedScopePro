@@ -35,27 +35,27 @@ public static class ToggleButtonMetadata
     private static readonly Dictionary<Enum, ToggleButtonMeta> Metadata = new()
     {
         // SideMenu
-        [PmSideMenuToggleButtonEnum.Power] = new ToggleButtonMeta(
+        [SideMenuToggleButtonEnum.Power] = new ToggleButtonMeta(
                 icon: IconEnum.Power,
                 tooltip: "Ein/Aus"
             ),
 
         // TitleBar
-        [PmTitleBarToggleButtonEnum.Design] = new ToggleButtonMeta(
+        [TitleBarToggleButtonEnum.Design] = new ToggleButtonMeta(
                 icon: IconEnum.DarkMode,
                 tooltip: "Dunkles Design aktivieren",
                 isChecked: new IsCheckedMeta(
                     icon: IconEnum.LightMode,
                     tooltip: "Helles Design aktivieren"
                 )),
-        [PmTitleBarToggleButtonEnum.Language] = new ToggleButtonMeta(
+        [TitleBarToggleButtonEnum.Language] = new ToggleButtonMeta(
                 icon: IconEnum.DarkMode,
                 tooltip: "Englich",
                 isChecked: new IsCheckedMeta(
                     icon: IconEnum.LightMode,
                     tooltip: "Deutsch"
                 )),
-        [PmTitleBarToggleButtonEnum.Profile] = new ToggleButtonMeta(
+        [TitleBarToggleButtonEnum.Profile] = new ToggleButtonMeta(
             label: "Dr. Ala Alduweebi",
             tooltip: "Profil"),
     };
@@ -69,7 +69,7 @@ public static class ToggleButtonMetadata
     /// <summary>
     /// Wendet Tooltip und Icon automatisch auf generische ToggleButton-Instanzen an.
     /// </summary>
-    public static void ApplyMetadata<TEnum>(PmToggleButtonGeneric<TEnum> toggleButton) where TEnum : Enum
+    public static void ApplyMetadata<TEnum>(ToggleButtonControlGeneric<TEnum> toggleButton) where TEnum : Enum
     {
         var meta = GetMeta(toggleButton.ButtonName);
         if (meta == null) return;

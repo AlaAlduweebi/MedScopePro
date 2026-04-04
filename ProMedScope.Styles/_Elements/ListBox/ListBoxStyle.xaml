@@ -3,12 +3,12 @@
                     xmlns:listBox="clr-namespace:ProMedScope.Controls._Elements.ListBox;assembly=ProMedScope.Controls">
 
     <!-- ListBoxStyle -->
-    <Style x:Key="ListBoxStyle" TargetType="{x:Type listBox:PmListBox}">
+    <Style x:Key="ListBoxStyle" TargetType="{x:Type listBox:ListBoxControl}">
         <Setter Property="Background" Value="White" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type listBox:PmListBox}">
+                <ControlTemplate TargetType="{x:Type listBox:ListBoxControl}">
                 
                 </ControlTemplate>
             </Setter.Value>

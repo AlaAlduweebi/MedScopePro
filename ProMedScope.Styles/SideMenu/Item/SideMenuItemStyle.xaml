@@ -4,13 +4,13 @@
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls">
 
     <!-- SideMenuItemStyle -->
-    <Style x:Key="SideMenuItemStyle" TargetType="{x:Type sideMenuItem:PmSideMenuItem}">
+    <Style x:Key="SideMenuItemStyle" TargetType="{x:Type sideMenuItem:SideMenuItemControl}">
         <Setter Property="Height" Value="70"/>
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type sideMenuItem:PmSideMenuItem}">
+                <ControlTemplate TargetType="{x:Type sideMenuItem:SideMenuItemControl}">
                     <Border x:Name="Border"
                             Background="{TemplateBinding Background}">
                         <Grid>
@@ -24,12 +24,12 @@
                                     Visibility="Collapsed"/>
 
                             <!-- Icon -->
-                            <icon:PmIcon x:Name="Icon" 
-                                         IconMaterial="{TemplateBinding Icon}"
-                                         Foreground="{TemplateBinding Foreground}"
-                                         Height="32" Width="32"
-                                         HorizontalAlignment="Center"
-                                         VerticalAlignment="Center"/>
+                            <icon:IconControl x:Name="Icon" 
+                                              IconMaterial="{TemplateBinding Icon}"
+                                              Foreground="{TemplateBinding Foreground}"
+                                              Height="32" Width="32"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
                         </Grid>
                     </Border>
                     <ControlTemplate.Triggers>

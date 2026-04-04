@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefinierter ScrollViewer.
 /// </summary>
-public class PmScrollViewer : System.Windows.Controls.ScrollViewer
+public class ScrollViewerControl : System.Windows.Controls.ScrollViewer
 {
 }

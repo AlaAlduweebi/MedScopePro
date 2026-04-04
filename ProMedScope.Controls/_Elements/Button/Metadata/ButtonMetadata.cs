@@ -24,7 +24,7 @@ public static class ButtonMetadata
     private static readonly Dictionary<Enum, ButtonMeta> Metadata = new()
     {
         // Workspace
-        [PmWorkspaceItemButtonEnum.Close] = new ButtonMeta(
+        [WorkspaceItemButtonEnum.Close] = new ButtonMeta(
                 icon: IconEnum.Cancel,
                 tooltip: "Schließen"
             ),
@@ -39,7 +39,7 @@ public static class ButtonMetadata
     /// <summary>
     /// Wendet Tooltip und Icon automatisch auf generische Button-Instanzen an.
     /// </summary>
-    public static void ApplyMetadata<TEnum>(PmButtonGeneric<TEnum> button) where TEnum : Enum
+    public static void ApplyMetadata<TEnum>(ButtonControlGeneric<TEnum> button) where TEnum : Enum
     {
         var meta = GetMeta(button.ButtonName);
         if (meta == null) return;

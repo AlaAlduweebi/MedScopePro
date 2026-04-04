@@ -1,29 +1,29 @@
-﻿using ProMedScope.Controls._Elements.Button.Metadata;
+﻿using ProMedScope.Controls._Elements.ToggleButton.Metadata;
 using ProMedScope.Controls.Icon.Enums;
 using System.Windows;
 
-namespace ProMedScope.Controls._Elements.Button.Generic;
+namespace ProMedScope.Controls._Elements.ToggleButton.Generic;
 
 /// <summary>
-/// Generischer Button mit Enum-basierter Identifikation.
+/// Generischer ToggleButton mit Enum-basierter Identifikation.
 /// </summary>
-/// <typeparam name="TEnum">Enum zur Bestimmung der Button.</typeparam>
-public abstract class PmButtonGeneric<TEnum> : PmButton where TEnum : Enum
+/// <typeparam name="TEnum">Enum zur Bestimmung der ToggleButton.</typeparam>
+public abstract class ToggleButtonControlGeneric<TEnum> : ToggleButtonControl where TEnum : Enum
 {
     #region Dependency Properties
 
     public static readonly DependencyProperty ButtonNameProperty =
-        DependencyProperty.Register(nameof(ButtonName), typeof(TEnum), typeof(PmButtonGeneric<TEnum>), new PropertyMetadata(default(TEnum)));
+        DependencyProperty.Register(nameof(ButtonName), typeof(TEnum), typeof(ToggleButtonControlGeneric<TEnum>), new PropertyMetadata(default(TEnum)));
 
     public static readonly DependencyProperty IconProperty =
-        DependencyProperty.Register(nameof(Icon), typeof(IconEnum), typeof(PmButtonGeneric<TEnum>), new PropertyMetadata(default(IconEnum)));
+        DependencyProperty.Register(nameof(Icon), typeof(IconEnum), typeof(ToggleButtonControlGeneric<TEnum>), new PropertyMetadata(default(IconEnum)));
 
     #endregion
 
     #region Eigenschaften
 
     /// <summary>
-    /// Der Name des Buttons, der als Enum-Wert definiert ist.
+    /// Der Name des ToggleButtons, der als Enum-Wert definiert ist.
     /// </summary>
     public TEnum ButtonName
     {
@@ -36,9 +36,9 @@ public abstract class PmButtonGeneric<TEnum> : PmButton where TEnum : Enum
     #region Konstruktor
 
     /// <summary>
-    /// Initialisiert eine neue Instanz der <see cref="PmButtonGeneric{TEnum}"/>-Klasse.
+    /// Initialisiert eine neue Instanz der <see cref="ToggleButtonControlGeneric{TEnum}"/>-Klasse.
     /// </summary>
-    protected PmButtonGeneric()
+    protected ToggleButtonControlGeneric()
     {
         Click += ButtonClick;
     }
@@ -63,11 +63,11 @@ public abstract class PmButtonGeneric<TEnum> : PmButton where TEnum : Enum
     {
         base.OnInitialized(e);
 
-        ButtonMetadata.ApplyMetadata(this);
+        ToggleButtonMetadata.ApplyMetadata(this);
     }
 
     /// <summary>
-    /// Event-Handler für Button-Klick.
+    /// Event-Handler für ToggleButton-Klick.
     /// Führt die entsprechende Aktion basierend auf dem <see cref="ButtonName"/> aus.
     /// </summary>
     protected virtual void ButtonClick(object sender, RoutedEventArgs e)

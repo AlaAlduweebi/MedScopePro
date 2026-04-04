@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefinierter TextBlock.
 /// </summary>
-public class PmTextBlock : System.Windows.Controls.TextBlock
+public class TextBlockControl : System.Windows.Controls.TextBlock
 {
 }

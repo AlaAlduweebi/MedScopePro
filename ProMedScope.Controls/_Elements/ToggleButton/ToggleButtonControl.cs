@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefinierter ToggleButton.
 /// </summary>
-public class PmToggleButton : System.Windows.Controls.Primitives.ToggleButton
+public class ToggleButtonControl : System.Windows.Controls.Primitives.ToggleButton
 {
 }

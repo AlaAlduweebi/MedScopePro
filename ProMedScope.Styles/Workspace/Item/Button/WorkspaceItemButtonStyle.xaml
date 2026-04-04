@@ -5,29 +5,29 @@
                     xmlns:workspaceItem="clr-namespace:ProMedScope.Controls.Workspace._Elements.Item;assembly=ProMedScope.Controls">
 
     <!-- WorkspaceItemButtonStyle -->
-    <Style x:Key="WorkspaceItemButtonStyle" TargetType="{x:Type workspaceItemButton:PmWorkspaceItemButton}">
+    <Style x:Key="WorkspaceItemButtonStyle" TargetType="{x:Type workspaceItemButton:WorkspaceItemButtonControl}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type workspaceItemButton:PmWorkspaceItemButton}">
+                <ControlTemplate TargetType="{x:Type workspaceItemButton:WorkspaceItemButtonControl}">
                     <Border x:Name="Border"
 		                    Background="{TemplateBinding Background}"
 		                    BorderBrush="{TemplateBinding BorderBrush}"
 		                    BorderThickness="{TemplateBinding BorderThickness}">
 
                         <!-- Icon -->
-                        <icon:PmIcon Grid.Column="0"
-                                     x:Name="Icon"
-			                         Height="14" Width="14"
-			                         IconMaterial="{TemplateBinding Icon}"
-			                         Foreground="{TemplateBinding Foreground}"/>
+                        <icon:IconControl Grid.Column="0"
+                                          x:Name="Icon"
+			                              Height="14" Width="14"
+			                              IconMaterial="{TemplateBinding Icon}"
+			                              Foreground="{TemplateBinding Foreground}"/>
 
                     </Border>
                     <ControlTemplate.Triggers>
 
-                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=workspaceItem:PmWorkspaceItem}}" Value="True">
+                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=workspaceItem:WorkspaceItemControl}}" Value="True">
                             <Setter Property="Foreground" Value="White"/>
                         </DataTrigger>
                         

@@ -11,7 +11,7 @@ namespace ProMedScope.Controls.SideMenu;
 /// <summary>
 /// Repräsentiert das Seitenmenü der Anwendung.
 /// </summary>
-public class PmSideMenu : PmTabControl
+public class SideMenuControl : TabControl
 {
     /// <summary>
     /// Initialisiert die Standard-Einträge des Seitenmenüs.
@@ -23,33 +23,33 @@ public class PmSideMenu : PmTabControl
         if (Items.Count > 0)
             return;
 
-        Items.Add(new PmSideMenuItem
+        Items.Add(new SideMenuItemControl
         {
-            MenuName = PmSideMenuItemEnum.Dashboard,
+            MenuName = SideMenuItemEnum.Dashboard,
             Icon = IconEnum.Dashboard,
             ToolTip = "Dashboard",
             Content = new DashboardViewModel(),
         });
 
-        Items.Add(new PmSideMenuItem
+        Items.Add(new SideMenuItemControl
         {
-            MenuName = PmSideMenuItemEnum.Patient,
+            MenuName = SideMenuItemEnum.Patient,
             Icon = IconEnum.Person,
             ToolTip = "Patient",
             Content = new PatientViewModel(),
         });
 
-        Items.Add(new PmSideMenuItem
+        Items.Add(new SideMenuItemControl
         {
-            MenuName = PmSideMenuItemEnum.Reports,
+            MenuName = SideMenuItemEnum.Reports,
             Icon = IconEnum.Assignment,
             ToolTip = "Berichte",
             Content = new ReportsViewModel(),
         });
 
-        Items.Add(new PmSideMenuItem
+        Items.Add(new SideMenuItemControl
         {
-            MenuName = PmSideMenuItemEnum.Settings,
+            MenuName = SideMenuItemEnum.Settings,
             Icon = IconEnum.Settings,
             ToolTip = "Einstellungen",
             Content = new SettingsViewModel(),

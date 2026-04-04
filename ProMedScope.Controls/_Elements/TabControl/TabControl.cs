@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefiniertes TabControl.
 /// </summary>
-public class PmTabControl : System.Windows.Controls.TabControl
+public class TabControl : System.Windows.Controls.TabControl
 {
 }

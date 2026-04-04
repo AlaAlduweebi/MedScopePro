@@ -4,13 +4,13 @@
                     xmlns:workspaceItemButton="clr-namespace:ProMedScope.Controls.Workspace._Elements.Item._Elements.Button;assembly=ProMedScope.Controls">
 
     <!-- WorkspaceItemStyle -->
-    <Style x:Key="WorkspaceItemStyle" TargetType="{x:Type workspaceItem:PmWorkspaceItem}">
+    <Style x:Key="WorkspaceItemStyle" TargetType="{x:Type workspaceItem:WorkspaceItemControl}">
         <Setter Property="Height" Value="36"/>
         <Setter Property="Background" Value="White"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type workspaceItem:PmWorkspaceItem}">
+                <ControlTemplate TargetType="{x:Type workspaceItem:WorkspaceItemControl}">
                     <Border x:Name="Border"
                             Background="{TemplateBinding Background}"
                             CornerRadius="20">
@@ -27,7 +27,7 @@
                                               RecognizesAccessKey="True"/>
 
                             <!-- CloseButton -->
-                            <workspaceItemButton:PmWorkspaceItemButton 
+                            <workspaceItemButton:WorkspaceItemButtonControl 
                                 Grid.Column="1"
                                 x:Name="CloseButton"
                                 ButtonName="Close"

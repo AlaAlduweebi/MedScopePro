@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefinierte CheckBox.
 /// </summary>
-public class PmCheckBox : System.Windows.Controls.CheckBox
+public class CheckBoxControl : System.Windows.Controls.CheckBox
 {
 }

@@ -6,7 +6,7 @@ namespace ProMedScope.Controls.Workspace._Elements.Item._Elements.Button;
 /// <summary>
 /// /// Benutzerdefinierter Button für das WorkspaceItem.
 /// </summary>
-public class PmWorkspaceItemButton : PmButtonGeneric<PmWorkspaceItemButtonEnum>
+public class WorkspaceItemButtonControl : ButtonControlGeneric<WorkspaceItemButtonEnum>
 {
     #region Methoden
 
@@ -18,7 +18,7 @@ public class PmWorkspaceItemButton : PmButtonGeneric<PmWorkspaceItemButtonEnum>
     {
         switch (ButtonName)
         {
-            case PmWorkspaceItemButtonEnum.Close:
+            case WorkspaceItemButtonEnum.Close:
                 CloseWorkspaceItem();
                 break;
 

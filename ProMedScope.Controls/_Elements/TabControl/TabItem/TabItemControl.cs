@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefiniertes TabItem.
 /// </summary>
-public class PmTabControlTabItem : System.Windows.Controls.TabItem
+public class TabItemControl : System.Windows.Controls.TabItem
 {
 }

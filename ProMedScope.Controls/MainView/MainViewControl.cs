@@ -5,6 +5,6 @@ namespace ProMedScope.Controls.MainView;
 /// <summary>
 /// Repräsentiert die Hauptansicht der Anwendung.
 /// </summary>
-public class PmMainView : PmContentControl
+public class MainViewControl : ContentControl
 {
 }

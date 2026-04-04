@@ -4,24 +4,24 @@
                     xmlns:icon="clr-namespace:ProMedScope.Controls.Icon;assembly=ProMedScope.Controls">
 
     <!-- SideMenuToggleButtonStyle -->
-    <Style x:Key="SideMenuToggleButtonStyle" TargetType="{x:Type sideMenuToggleButton:PmSideMenuToggleButton}">
+    <Style x:Key="SideMenuToggleButtonStyle" TargetType="{x:Type sideMenuToggleButton:SideMenuToggleButtonControl}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type sideMenuToggleButton:PmSideMenuToggleButton}">
+                <ControlTemplate TargetType="{x:Type sideMenuToggleButton:SideMenuToggleButtonControl}">
                     <Border x:Name="Border"
 					        Background="{TemplateBinding Background}"
 					        BorderBrush="{TemplateBinding BorderBrush}"
 					        BorderThickness="{TemplateBinding BorderThickness}">
 
                             <!-- Icon -->
-                        <icon:PmIcon Grid.Column="0"
-                                     x:Name="Icon"
-						             Height="32" Width="32"
-						             IconMaterial="{TemplateBinding Icon}"
-						             Foreground="{TemplateBinding Foreground}"/>
+                        <icon:IconControl Grid.Column="0"
+                                          x:Name="Icon"
+						                  Height="32" Width="32"
+						                  IconMaterial="{TemplateBinding Icon}"
+						                  Foreground="{TemplateBinding Foreground}"/>
                         
                     </Border>
                     <ControlTemplate.Triggers>

@@ -8,7 +8,7 @@
                     xmlns:listBox="clr-namespace:ProMedScope.Controls._Elements.ListBox;assembly=ProMedScope.Controls"
                     xmlns:listView="clr-namespace:ProMedScope.Controls._Elements.ListView;assembly=ProMedScope.Controls"
                     xmlns:scrollViewer="clr-namespace:ProMedScope.Controls._Elements.ScrollViewer;assembly=ProMedScope.Controls"
-                    xmlns:tabControlTabItem="clr-namespace:ProMedScope.Controls._Elements.TabControl.TabItem;assembly=ProMedScope.Controls"
+                    xmlns:tabItem="clr-namespace:ProMedScope.Controls._Elements.TabControl.TabItem;assembly=ProMedScope.Controls"
                     xmlns:tabControl="clr-namespace:ProMedScope.Controls._Elements.TabControl;assembly=ProMedScope.Controls"
                     xmlns:textBlock="clr-namespace:ProMedScope.Controls._Elements.TextBlock;assembly=ProMedScope.Controls"
                     xmlns:textBox="clr-namespace:ProMedScope.Controls._Elements.TextBox;assembly=ProMedScope.Controls"
@@ -23,34 +23,34 @@
                     xmlns:titleBarToggleButton="clr-namespace:ProMedScope.Controls.TitleBar._Elements.ToggleButton;assembly=ProMedScope.Controls">
 
     <!-- Elements -->
-    <Style TargetType="{x:Type button:PmButton}" BasedOn="{StaticResource ButtonStyle}" />
-    <Style TargetType="{x:Type checkBox:PmCheckBox}" BasedOn="{StaticResource CheckBoxStyle}" />
-    <Style TargetType="{x:Type comboBox:PmComboBox}" BasedOn="{StaticResource ComboBoxStyle}" />
-    <Style TargetType="{x:Type contentControl:PmContentControl}" BasedOn="{StaticResource ContentControlStyle}" />
-    <Style TargetType="{x:Type contextMenu:PmContextMenu}" BasedOn="{StaticResource ContextMenuStyle}" />
-    <Style TargetType="{x:Type listBox:PmListBox}" BasedOn="{StaticResource ListBoxStyle}" />
-    <Style TargetType="{x:Type listView:PmListView}" BasedOn="{StaticResource ListViewStyle}" />
-    <Style TargetType="{x:Type scrollViewer:PmScrollViewer}" BasedOn="{StaticResource ScrollViewerStyle}" />
-    <Style TargetType="{x:Type tabControlTabItem:PmTabControlTabItem}" BasedOn="{StaticResource TabControlTabItemStyle}" />
-    <Style TargetType="{x:Type tabControl:PmTabControl}" BasedOn="{StaticResource TabControlStyle}" />
-    <Style TargetType="{x:Type textBlock:PmTextBlock}" BasedOn="{StaticResource TextBlockStyle}" />
-    <Style TargetType="{x:Type textBox:PmTextBox}" BasedOn="{StaticResource TextBoxStyle}" />
-    <Style TargetType="{x:Type toggleButton:PmToggleButton}" BasedOn="{StaticResource ToggleButtonStyle}" />
+    <Style TargetType="{x:Type button:ButtonControl}" BasedOn="{StaticResource ButtonStyle}" />
+    <Style TargetType="{x:Type checkBox:CheckBoxControl}" BasedOn="{StaticResource CheckBoxStyle}" />
+    <Style TargetType="{x:Type comboBox:ComboBoxControl}" BasedOn="{StaticResource ComboBoxStyle}" />
+    <Style TargetType="{x:Type contentControl:ContentControl}" BasedOn="{StaticResource ContentControlStyle}" />
+    <Style TargetType="{x:Type contextMenu:ContextMenuControl}" BasedOn="{StaticResource ContextMenuStyle}" />
+    <Style TargetType="{x:Type listBox:ListBoxControl}" BasedOn="{StaticResource ListBoxStyle}" />
+    <Style TargetType="{x:Type listView:ListViewControl}" BasedOn="{StaticResource ListViewStyle}" />
+    <Style TargetType="{x:Type scrollViewer:ScrollViewerControl}" BasedOn="{StaticResource ScrollViewerStyle}" />
+    <Style TargetType="{x:Type tabItem:TabItemControl}" BasedOn="{StaticResource TabItemStyle}" />
+    <Style TargetType="{x:Type tabControl:TabControl}" BasedOn="{StaticResource TabControlStyle}" />
+    <Style TargetType="{x:Type textBlock:TextBlockControl}" BasedOn="{StaticResource TextBlockStyle}" />
+    <Style TargetType="{x:Type textBox:TextBoxControl}" BasedOn="{StaticResource TextBoxStyle}" />
+    <Style TargetType="{x:Type toggleButton:ToggleButtonControl}" BasedOn="{StaticResource ToggleButtonStyle}" />
 
     <!-- Icon -->
-    <Style TargetType="{x:Type icon:PmIcon}" BasedOn="{StaticResource IconStyle}" />
+    <Style TargetType="{x:Type icon:IconControl}" BasedOn="{StaticResource IconStyle}" />
 
     <!-- Workspace -->
-    <Style TargetType="{x:Type workspaceItemButton:PmWorkspaceItemButton}" BasedOn="{StaticResource WorkspaceItemButtonStyle}" />
-    <Style TargetType="{x:Type workspaceItem:PmWorkspaceItem}" BasedOn="{StaticResource WorkspaceItemStyle}" />
-    <Style TargetType="{x:Type workspace:PmWorkspace}" BasedOn="{StaticResource WorkspaceStyle}" />
+    <Style TargetType="{x:Type workspaceItemButton:WorkspaceItemButtonControl}" BasedOn="{StaticResource WorkspaceItemButtonStyle}" />
+    <Style TargetType="{x:Type workspaceItem:WorkspaceItemControl}" BasedOn="{StaticResource WorkspaceItemStyle}" />
+    <Style TargetType="{x:Type workspace:WorkspaceControl}" BasedOn="{StaticResource WorkspaceStyle}" />
     
     <!-- SideMenu -->
-    <Style TargetType="{x:Type sideMenuToggleButton:PmSideMenuToggleButton}" BasedOn="{StaticResource SideMenuToggleButtonStyle}" />
-    <Style TargetType="{x:Type sideMenuItem:PmSideMenuItem}" BasedOn="{StaticResource SideMenuItemStyle}" />
-    <Style TargetType="{x:Type sideMenu:PmSideMenu}" BasedOn="{StaticResource SideMenuStyle}" />
+    <Style TargetType="{x:Type sideMenuToggleButton:SideMenuToggleButtonControl}" BasedOn="{StaticResource SideMenuToggleButtonStyle}" />
+    <Style TargetType="{x:Type sideMenuItem:SideMenuItemControl}" BasedOn="{StaticResource SideMenuItemStyle}" />
+    <Style TargetType="{x:Type sideMenu:SideMenuControl}" BasedOn="{StaticResource SideMenuStyle}" />
 
     <!-- TitleBar -->
-    <Style TargetType="{x:Type titleBarToggleButton:PmTitleBarToggleButton}" BasedOn="{StaticResource TitleBarToggleButtonStyle}" />
+    <Style TargetType="{x:Type titleBarToggleButton:TitleBarToggleButtonControl}" BasedOn="{StaticResource TitleBarToggleButtonStyle}" />
 
 </ResourceDictionary>

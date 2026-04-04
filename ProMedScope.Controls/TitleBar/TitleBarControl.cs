@@ -8,7 +8,7 @@ namespace ProMedScope.Controls.TitleBar;
 /// <summary>
 /// Repräsentiert die Titelleiste der Anwendung.
 /// </summary>
-public class PmTitleBar : PmContentControl
+public class TitleBarControl : ContentControl
 {
     #region Felder
 

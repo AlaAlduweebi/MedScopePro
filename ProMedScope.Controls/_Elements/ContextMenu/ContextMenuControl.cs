@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefiniertes ContextMenu.
 /// </summary>
-public class PmContextMenu : System.Windows.Controls.ContextMenu
+public class ContextMenuControl : System.Windows.Controls.ContextMenu
 {
 }

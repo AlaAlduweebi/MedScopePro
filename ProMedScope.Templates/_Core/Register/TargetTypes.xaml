@@ -4,12 +4,12 @@
                     xmlns:mainView="clr-namespace:ProMedScope.Controls.MainView;assembly=ProMedScope.Controls">
 
     <!-- TitleBar -->
-    <Style TargetType="{x:Type titleBar:PmTitleBar}">
+    <Style TargetType="{x:Type titleBar:TitleBarControl}">
         <Setter Property="Template" Value="{DynamicResource TitleBarTemplate}" />
     </Style>
     
     <!-- MainView -->
-    <Style TargetType="{x:Type mainView:PmMainView}">
+    <Style TargetType="{x:Type mainView:MainViewControl}">
         <Setter Property="Template" Value="{DynamicResource MainViewTemplate}" />
     </Style>
     

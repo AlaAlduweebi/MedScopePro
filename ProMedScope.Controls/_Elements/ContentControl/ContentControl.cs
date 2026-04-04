@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefiniertes ContentControl.
 /// </summary>
-public class PmContentControl : System.Windows.Controls.ContentControl
+public class ContentControl : System.Windows.Controls.ContentControl
 {
 }

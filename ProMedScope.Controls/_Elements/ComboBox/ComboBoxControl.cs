@@ -3,6 +3,6 @@
 /// <summary>
 /// Benutzerdefinierte PmComboBox.
 /// </summary>
-public class PmComboBox : System.Windows.Controls.ComboBox
+public class ComboBoxControl : System.Windows.Controls.ComboBox
 {
 }

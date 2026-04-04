@@ -3,12 +3,12 @@
                     xmlns:checkBox="clr-namespace:ProMedScope.Controls._Elements.CheckBox;assembly=ProMedScope.Controls">
 
     <!-- CheckBoxStyle -->
-    <Style x:Key="CheckBoxStyle" TargetType="{x:Type checkBox:PmCheckBox}">
+    <Style x:Key="CheckBoxStyle" TargetType="{x:Type checkBox:CheckBoxControl}">
         <Setter Property="Background" Value="White" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type checkBox:PmCheckBox}">
+                <ControlTemplate TargetType="{x:Type checkBox:CheckBoxControl}">
                 
                 </ControlTemplate>
             </Setter.Value>

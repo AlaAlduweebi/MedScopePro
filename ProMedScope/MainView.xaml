@@ -5,6 +5,6 @@
         WindowStartupLocation="CenterScreen"
         Style="{StaticResource MainViewStyle}">
 
-    <mainView:PmMainView x:Name="MainViewControl"/>
+    <mainView:MainViewControl x:Name="MainViewControl"/>
 
 </Window>
