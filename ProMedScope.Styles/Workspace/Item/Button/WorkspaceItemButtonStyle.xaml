@@ -19,7 +19,7 @@
                         <!-- Icon -->
                         <icon:PmIcon Grid.Column="0"
                                      x:Name="Icon"
-			                         Height="20" Width="20"
+			                         Height="14" Width="14"
 			                         IconMaterial="{TemplateBinding Icon}"
 			                         Foreground="{TemplateBinding Foreground}"/>
 

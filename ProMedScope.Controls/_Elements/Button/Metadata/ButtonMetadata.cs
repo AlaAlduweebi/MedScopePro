@@ -1,5 +1,5 @@
-﻿using ProMedScope.Controls._Elements.Button.Generic;
-using ProMedScope.Controls.TitleBar._Elements;
+﻿using ProMedScope.Controls.Workspace._Elements.Item._Elements.Button;
+using ProMedScope.Controls._Elements.Button.Generic;
 using ProMedScope.Controls.Icon;
 
 namespace ProMedScope.Controls._Elements.Button.Metadata;
@@ -23,6 +23,11 @@ public static class ButtonMetadata
     /// </summary>
     private static readonly Dictionary<Enum, ButtonMeta> Metadata = new()
     {
+        // Workspace
+        [PmWorkspaceItemButtonEnum.Close] = new ButtonMeta(
+                icon: PmIconEnum.Cancel,
+                tooltip: "Schließen"
+            ),
     };
 
     /// <summary>
