@@ -1,6 +1,6 @@
-# ProMedScope
+# MedScopePro
 
-ProMedScope ist eine moderne WPF-Desktopanwendung für den medizinischen Bereich.  
+MedScopePro ist eine moderne WPF-Desktopanwendung für den medizinischen Bereich.  
 Die Anwendung dient dazu, Daten aus Untersuchungen übersichtlich darzustellen und zu verwalten.
 
 ---
@@ -71,7 +71,7 @@ Dieses Projekt ist ein privates Entwicklungsprojekt zur Vertiefung von WPF, UI/U
 
 ## UI Preview
 
-![ProMedScope UI](./docs/ui-preview.png)
+![MedScopePro UI](./docs/ui-preview.png)
 
 ## Design
 

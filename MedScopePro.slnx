@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="MedScopePro.Controls/MedScopePro.Controls.csproj" Id="c6fd84a8-c4fa-4a24-b672-011d72232cad" />
+  <Project Path="MedScopePro.Styles/MedScopePro.Styles.csproj" Id="50740e31-056b-4885-a156-e41a82520997" />
+  <Project Path="MedScopePro.Templates/MedScopePro.Templates.csproj" Id="21ec210a-9373-4d9e-b628-fdfb39c2a63d" />
+  <Project Path="MedScopePro.ViewModels/MedScopePro.ViewModels.csproj" Id="a0a400a5-f497-4c06-a3a6-844a0f08745d" />
+  <Project Path="MedScopePro.Views/MedScopePro.Views.csproj" Id="c6059332-7bd7-4e16-bc9a-87d7fbc2419b" />
+  <Project Path="MedScopePro/MedScopePro.csproj" />
+</Solution>

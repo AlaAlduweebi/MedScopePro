@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+
+        <!-- Icon -->
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Core/Resources/Icons/SvgPaths.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/Icon/IconStyle.xaml" />
+        
+        <!-- Elements -->
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/TextBlock/TextBlockStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/CheckBox/CheckBoxStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/Button/ButtonStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/ToggleButton/ToggleButtonStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/TextBox/TextBoxStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/ComboBox/ComboBoxStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/ListBox/ListBoxStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/ContextMenu/ContextMenuStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/ScrollViewer/ScrollViewerStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/ListView/ListViewStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/TabControl/TabItem/TabItemStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/TabControl/TabControlStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/ContentControl/ContentControlStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/MainView/MainViewStyle.xaml" />
+
+        <!-- Workspace -->
+        <ResourceDictionary Source="/MedScopePro.Styles;component/Workspace/Item/Button/WorkspaceItemButtonStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/Workspace/Item/WorkspaceItemStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/Workspace/WorkspaceStyle.xaml" />
+        
+        <!-- SideMenu -->
+        <ResourceDictionary Source="/MedScopePro.Styles;component/SideMenu/ToggleButton/SideMenuToggleButtonStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/SideMenu/Item/SideMenuItemStyle.xaml" />
+        <ResourceDictionary Source="/MedScopePro.Styles;component/SideMenu/SideMenuStyle.xaml" />
+
+        <!-- TitleBar -->
+        <ResourceDictionary Source="/MedScopePro.Styles;component/TitleBar/ToggleButton/TitleBarToggleButtonStyle.xaml" />
+        
+        <!-- MainView -->
+        <ResourceDictionary Source="/MedScopePro.Styles;component/MainView/MainViewStyle.xaml" />
+
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

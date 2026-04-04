@@ -1,0 +1,10 @@
+﻿<Window x:Class="MedScopePro.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mainView="clr-namespace:MedScopePro.Controls.MainView;assembly=MedScopePro.Controls"
+        WindowStartupLocation="CenterScreen"
+        Style="{StaticResource MainViewStyle}">
+
+    <mainView:MainViewControl x:Name="MainViewControl"/>
+
+</Window>

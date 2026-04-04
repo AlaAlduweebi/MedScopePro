@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:textBlock="clr-namespace:MedScopePro.Controls._Elements.TextBlock;assembly=MedScopePro.Controls">
+
+    <!-- TextBlockStyle -->
+    <Style x:Key="TextBlockStyle" TargetType="{x:Type textBlock:TextBlockControl}">
+        <Setter Property="Background" Value="White" />
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+</ResourceDictionary>

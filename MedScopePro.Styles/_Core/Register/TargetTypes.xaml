@@ -1,0 +1,56 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:button="clr-namespace:MedScopePro.Controls._Elements.Button;assembly=MedScopePro.Controls"
+                    xmlns:checkBox="clr-namespace:MedScopePro.Controls._Elements.CheckBox;assembly=MedScopePro.Controls"
+                    xmlns:comboBox="clr-namespace:MedScopePro.Controls._Elements.ComboBox;assembly=MedScopePro.Controls"
+                    xmlns:contentControl="clr-namespace:MedScopePro.Controls._Elements.ContentControl;assembly=MedScopePro.Controls"
+                    xmlns:contextMenu="clr-namespace:MedScopePro.Controls._Elements.ContextMenu;assembly=MedScopePro.Controls"
+                    xmlns:listBox="clr-namespace:MedScopePro.Controls._Elements.ListBox;assembly=MedScopePro.Controls"
+                    xmlns:listView="clr-namespace:MedScopePro.Controls._Elements.ListView;assembly=MedScopePro.Controls"
+                    xmlns:scrollViewer="clr-namespace:MedScopePro.Controls._Elements.ScrollViewer;assembly=MedScopePro.Controls"
+                    xmlns:tabItem="clr-namespace:MedScopePro.Controls._Elements.TabControl.TabItem;assembly=MedScopePro.Controls"
+                    xmlns:tabControl="clr-namespace:MedScopePro.Controls._Elements.TabControl;assembly=MedScopePro.Controls"
+                    xmlns:textBlock="clr-namespace:MedScopePro.Controls._Elements.TextBlock;assembly=MedScopePro.Controls"
+                    xmlns:textBox="clr-namespace:MedScopePro.Controls._Elements.TextBox;assembly=MedScopePro.Controls"
+                    xmlns:toggleButton="clr-namespace:MedScopePro.Controls._Elements.ToggleButton;assembly=MedScopePro.Controls"
+                    xmlns:icon="clr-namespace:MedScopePro.Controls.Icon;assembly=MedScopePro.Controls"
+                    xmlns:workspaceItemButton="clr-namespace:MedScopePro.Controls.Workspace._Elements.Item._Elements.Button;assembly=MedScopePro.Controls"
+                    xmlns:workspaceItem="clr-namespace:MedScopePro.Controls.Workspace._Elements.Item;assembly=MedScopePro.Controls"
+                    xmlns:workspace="clr-namespace:MedScopePro.Controls.Workspace;assembly=MedScopePro.Controls"
+                    xmlns:sideMenuToggleButton="clr-namespace:MedScopePro.Controls.SideMenu._Elements.ToggleButton;assembly=MedScopePro.Controls"
+                    xmlns:sideMenuItem="clr-namespace:MedScopePro.Controls.SideMenu._Elements.Item;assembly=MedScopePro.Controls"
+                    xmlns:sideMenu="clr-namespace:MedScopePro.Controls.SideMenu;assembly=MedScopePro.Controls"
+                    xmlns:titleBarToggleButton="clr-namespace:MedScopePro.Controls.TitleBar._Elements.ToggleButton;assembly=MedScopePro.Controls">
+
+    <!-- Elements -->
+    <Style TargetType="{x:Type button:ButtonControl}" BasedOn="{StaticResource ButtonStyle}" />
+    <Style TargetType="{x:Type checkBox:CheckBoxControl}" BasedOn="{StaticResource CheckBoxStyle}" />
+    <Style TargetType="{x:Type comboBox:ComboBoxControl}" BasedOn="{StaticResource ComboBoxStyle}" />
+    <Style TargetType="{x:Type contentControl:ContentControl}" BasedOn="{StaticResource ContentControlStyle}" />
+    <Style TargetType="{x:Type contextMenu:ContextMenuControl}" BasedOn="{StaticResource ContextMenuStyle}" />
+    <Style TargetType="{x:Type listBox:ListBoxControl}" BasedOn="{StaticResource ListBoxStyle}" />
+    <Style TargetType="{x:Type listView:ListViewControl}" BasedOn="{StaticResource ListViewStyle}" />
+    <Style TargetType="{x:Type scrollViewer:ScrollViewerControl}" BasedOn="{StaticResource ScrollViewerStyle}" />
+    <Style TargetType="{x:Type tabItem:TabItemControl}" BasedOn="{StaticResource TabItemStyle}" />
+    <Style TargetType="{x:Type tabControl:TabControl}" BasedOn="{StaticResource TabControlStyle}" />
+    <Style TargetType="{x:Type textBlock:TextBlockControl}" BasedOn="{StaticResource TextBlockStyle}" />
+    <Style TargetType="{x:Type textBox:TextBoxControl}" BasedOn="{StaticResource TextBoxStyle}" />
+    <Style TargetType="{x:Type toggleButton:ToggleButtonControl}" BasedOn="{StaticResource ToggleButtonStyle}" />
+
+    <!-- Icon -->
+    <Style TargetType="{x:Type icon:IconControl}" BasedOn="{StaticResource IconStyle}" />
+
+    <!-- Workspace -->
+    <Style TargetType="{x:Type workspaceItemButton:WorkspaceItemButtonControl}" BasedOn="{StaticResource WorkspaceItemButtonStyle}" />
+    <Style TargetType="{x:Type workspaceItem:WorkspaceItemControl}" BasedOn="{StaticResource WorkspaceItemStyle}" />
+    <Style TargetType="{x:Type workspace:WorkspaceControl}" BasedOn="{StaticResource WorkspaceStyle}" />
+    
+    <!-- SideMenu -->
+    <Style TargetType="{x:Type sideMenuToggleButton:SideMenuToggleButtonControl}" BasedOn="{StaticResource SideMenuToggleButtonStyle}" />
+    <Style TargetType="{x:Type sideMenuItem:SideMenuItemControl}" BasedOn="{StaticResource SideMenuItemStyle}" />
+    <Style TargetType="{x:Type sideMenu:SideMenuControl}" BasedOn="{StaticResource SideMenuStyle}" />
+
+    <!-- TitleBar -->
+    <Style TargetType="{x:Type titleBarToggleButton:TitleBarToggleButtonControl}" BasedOn="{StaticResource TitleBarToggleButtonStyle}" />
+
+</ResourceDictionary>

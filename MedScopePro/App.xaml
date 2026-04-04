@@ -1,0 +1,41 @@
+﻿<Application x:Class="MedScopePro.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MedScopePro"
+             xmlns:vmDashboard="clr-namespace:MedScopePro.ViewModels.Dashboard;assembly=MedScopePro.ViewModels"
+             xmlns:vmPatient="clr-namespace:MedScopePro.ViewModels.Patient;assembly=MedScopePro.ViewModels"
+             xmlns:vmReports="clr-namespace:MedScopePro.ViewModels.Reports;assembly=MedScopePro.ViewModels"
+             xmlns:vmSettings="clr-namespace:MedScopePro.ViewModels.Settings;assembly=MedScopePro.ViewModels"
+             xmlns:vDashboard="clr-namespace:MedScopePro.Views.Dashboard;assembly=MedScopePro.Views"
+             xmlns:vPatient="clr-namespace:MedScopePro.Views.Patient;assembly=MedScopePro.Views"
+             xmlns:vReports="clr-namespace:MedScopePro.Views.Reports;assembly=MedScopePro.Views"
+             xmlns:vSettings="clr-namespace:MedScopePro.Views.Settings;assembly=MedScopePro.Views"
+             StartupUri="MainView.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/MedScopePro.Styles;component/_Core/Register/LookAndFeel.xaml" />
+                <ResourceDictionary Source="/MedScopePro.Styles;component/_Core/Register/TargetTypes.xaml" />
+                <ResourceDictionary Source="/MedScopePro.Templates;component/_Core/Register/LookAndFeel.xaml" />
+                <ResourceDictionary Source="/MedScopePro.Templates;component/_Core/Register/TargetTypes.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type vmDashboard:DashboardViewModel}">
+                <vDashboard:DashboardView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vmPatient:PatientViewModel}">
+                <vPatient:PatientView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vmReports:ReportsViewModel}">
+                <vReports:ReportsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vmSettings:SettingsViewModel}">
+                <vSettings:SettingsView/>
+            </DataTemplate>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
