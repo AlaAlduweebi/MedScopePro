@@ -17,12 +17,21 @@
 		                    BorderBrush="{TemplateBinding BorderBrush}"
 		                    BorderThickness="{TemplateBinding BorderThickness}">
 
-                        <!-- Icon -->
-                        <icon:IconControl Grid.Column="0"
-                                          x:Name="Icon"
-			                              Height="14" Width="14"
-			                              IconMaterial="{TemplateBinding Icon}"
-			                              Foreground="{TemplateBinding Foreground}"/>
+                        <Grid>
+
+                            <!-- Circle -->
+                            <Ellipse x:Name="Circle"
+                                     Width="12" Height="12"
+                                     Fill="Transparent"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Center"/>
+
+                            <!-- Icon -->
+                            <icon:IconControl x:Name="Icon"
+                                              Height="14" Width="14"
+                                              IconMaterial="{TemplateBinding Icon}"
+                                              Foreground="{TemplateBinding Foreground}"/>
+                        </Grid>
 
                     </Border>
                     <ControlTemplate.Triggers>
@@ -34,6 +43,7 @@
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="Icon" Property="IconStyle" Value="Fill" />
                             <Setter Property="Foreground" Value="#FF3A36" />
+                            <Setter TargetName="Circle" Property="Fill" Value="White"/>
                         </Trigger>
 
                     </ControlTemplate.Triggers>
