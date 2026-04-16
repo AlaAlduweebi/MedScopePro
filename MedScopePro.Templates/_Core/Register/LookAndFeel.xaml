@@ -5,6 +5,9 @@
 
         <!-- TitleBar -->
         <ResourceDictionary Source="/MedScopePro.Templates;component/TitleBar/TitleBarTemplate.xaml" />
+
+        <!-- Widget -->
+        <ResourceDictionary Source="/MedScopePro.Templates;component/Widget/WidgetTemplate.xaml" />
         
         <!-- MainView -->
         <ResourceDictionary Source="/MedScopePro.Templates;component/MainView/MainViewTemplate.xaml" />
