@@ -31,12 +31,36 @@ Ziel ist es, eine intuitive Oberfläche bereitzustellen, die einen schnellen Üb
 
 ## Architektur
 
-Das Projekt basiert auf einer eigenen, modularen WPF-Architektur mit Fokus auf:
+Das Solution enthält mehrere Projekte mit klaren Verantwortlichkeiten:
 
-- Wiederverwendbare Controls  
-- Klare Trennung von Control, Style und Template  
-- Zentrale Steuerung über Enums und Metadaten  
-- Erweiterbarkeit und Wartbarkeit  
+- **MedScopePro**  
+  Hauptprojekt / App‑Start.
+
+- **MedScopePro.Controls**  
+  Wiederverwendbare Custom Controls.
+
+- **MedScopePro.Styles**  
+  Zentrale Styles und Ressourcen.
+
+- **MedScopePro.Templates**  
+  Control‑ und View‑Templates.
+
+- **MedScopePro.Models**  
+  Datenmodelle.
+
+- **MedScopePro.ViewModels**  
+  MVVM‑Logik und Navigation.
+
+- **MedScopePro.Views**  
+  UI‑Layouts / Views.
+
+**Prinzipien**  
+- Klare Trennung: Controls ↔ Styles ↔ Templates; Models ↔ Views ↔ ViewModels.
+- Namenskonvention: Jede UI‑Einheit hat denselben Basisnamen; Suffix unterscheidet Typ: ...Control, ...Style, ...Template.
+- Instanznamen: Controls werden in Views und Templates nach dem Basisnamen in camelCase benannt.
+- Spiegelnde Ordnerstruktur: Controls, Styles, Templates haben gleiche Unterordner; ebenso Models, ViewModels und Views.
+- Registrierung: LookAndFeel und TargetTypes sind zentralisiert in 'MedScopePro.Styles' / 'MedScopePro.Templates'.
+- Unterelemente / Core: Interne Elemente eines Controls liegen in '_Elements'; zentrale Logik, Registrierung und Hilfsklassen in '_Core'
 
 ---
 
@@ -72,7 +96,3 @@ Dieses Projekt ist ein privates Entwicklungsprojekt zur Vertiefung von WPF, UI/U
 ## UI Preview
 
 ![MedScopePro UI](./docs/ui-preview.png)
-
-## Design
-
-[Figma-Entwurf ansehen](https://www.figma.com/design/CjIcdNyQByjFuCIQ5wIz3d/ProMedScope)
