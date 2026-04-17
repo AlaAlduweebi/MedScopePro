@@ -12,7 +12,8 @@
     <Grid>
 
         <!-- Workspace -->
-        <workspace:WorkspaceControl ItemsSource="{Binding OpenPatients}">
+        <workspace:WorkspaceControl ItemsSource="{Binding OpenPatients}"
+                                    SelectedIndex="0">
             <workspace:WorkspaceControl.ContentTemplate>
                 <DataTemplate>
                     <local:PatientWorkspaceLayout />
