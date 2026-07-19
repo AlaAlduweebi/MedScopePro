@@ -1,24 +1,60 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:titleBar="clr-namespace:MedScopePro.Controls.TitleBar;assembly=MedScopePro.Controls"
-                    xmlns:widget="clr-namespace:MedScopePro.Controls.Widget;assembly=MedScopePro.Controls">
+                    xmlns:widget="clr-namespace:MedScopePro.Controls.Widget;assembly=MedScopePro.Controls"
+                    xmlns:icon="clr-namespace:MedScopePro.Controls.Icon;assembly=MedScopePro.Controls">
 
     <!-- WidgetTemplate -->
     <ControlTemplate x:Key="WidgetTemplate" TargetType="{x:Type widget:WidgetControl}">
         <Border Background="White"
                 BorderThickness="0"
                 CornerRadius="20"
-                Padding="6">
+                Padding="10">
 
-            <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-                <!-- Titel -->
-                <TextBlock Text="{TemplateBinding Title}"/>
+                <StackPanel Grid.Column="0"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Top">
+
+                    <!-- Icon Hintergrund -->
+                    <Border Grid.Column="0"
+                            Background="#F6F6F6"
+                            CornerRadius="40"
+                            Width="50" Height="50"
+                            Visibility="Visible">
+
+                        <!-- Icon -->
+                        <icon:IconControl x:Name="Icon"
+						                  Height="18" Width="18"
+						                  IconMaterial="{TemplateBinding Icon}"
+						                  Foreground="{TemplateBinding Foreground}"/>
+                    </Border>
+
+                    <StackPanel Margin="10,0,0,0" 
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center">
+
+                        <!-- Titel -->
+                        <TextBlock FontStyle="Italic" 
+                                   Text="{TemplateBinding Title}"/>
+
+                        <!-- Info -->
+                        <TextBlock Margin="10,0,0,0" 
+                                   FontStyle="Italic"
+                                   Text="{TemplateBinding Info}"/>
+
+                    </StackPanel>
+                </StackPanel>
+
 
                 <!-- Inhalt -->
                 <ContentPresenter/>
                 
-            </StackPanel>
+            </Grid>
         </Border>
     </ControlTemplate>
 </ResourceDictionary>

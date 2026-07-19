@@ -24,7 +24,8 @@
                 <!-- Live-Aufnahme Widget -->
                 <widget:WidgetControl Grid.Column="0"
                                       x:Name="LiveRecordingWidget"
-                                      Title="Live-Aufnahme"
+                                      Title="Live   •"
+                                      Info="00:04:17"
                                       HorizontalAlignment="Stretch"
                                       VerticalAlignment="Stretch"/>
 
@@ -49,6 +50,7 @@
                     <!-- Patient Widget -->
                     <widget:WidgetControl Grid.Row="0"
                                           x:Name="PatientWidget"
+                                          Icon="Person"
                                           Title="Patient"
                                           HorizontalAlignment="Stretch"/>
 
@@ -66,6 +68,7 @@
                     <!-- Befunde Widget -->
                     <widget:WidgetControl Grid.Row="2"
                                           x:Name="FindingsWidget"
+                                          Icon="Person"
                                           Title="Befunde"
                                           HorizontalAlignment="Stretch"/>
                 </Grid>
@@ -93,6 +96,7 @@
                 <!-- Live-Werte Widget -->
                 <widget:WidgetControl Grid.Column="0"
                                       x:Name="LiveValuesWidget"
+                                      Icon="Person"
                                       Title="Live-Werte"
                                       HorizontalAlignment="Stretch"/>
 
@@ -108,7 +112,9 @@
                 <!-- Screenshots Widget -->
                 <widget:WidgetControl Grid.Column="2"
                                       x:Name="ScreenshotsWidget"
-                                      Title="Screenshots"
+                                      Icon="Person"
+                                      Title="Screenshots   •"
+                                      Info="4"
                                       HorizontalAlignment="Stretch"/>
             </Grid>
         </Grid>
