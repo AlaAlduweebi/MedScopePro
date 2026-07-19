@@ -31,6 +31,15 @@ public abstract class ToggleButtonControlGeneric<TEnum> : ToggleButtonControl wh
         set => SetValue(ButtonNameProperty, value);
     }
 
+    /// <summary>
+    /// Repräsentiert das Symbol.
+    /// </summary>
+    public IconEnum Icon
+    {
+        get { return (IconEnum)GetValue(IconProperty); }
+        set { SetValue(IconProperty, value); }
+    }
+
     #endregion
 
     #region Konstruktor
@@ -41,15 +50,6 @@ public abstract class ToggleButtonControlGeneric<TEnum> : ToggleButtonControl wh
     protected ToggleButtonControlGeneric()
     {
         Click += ButtonClick;
-    }
-
-    /// <summary>
-    /// Repräsentiert das Symbol.
-    /// </summary>
-    public IconEnum Icon
-    {
-        get { return (IconEnum)GetValue(IconProperty); }
-        set { SetValue(IconProperty, value); }
     }
 
     #endregion

@@ -1,4 +1,5 @@
 ﻿using MedScopePro.Controls._Elements.ContentControl;
+using MedScopePro.Controls.Icon.Enums;
 using System.Windows;
 
 namespace MedScopePro.Controls.Widget;
@@ -10,8 +11,14 @@ public class WidgetControl : ContentControl
 {
     #region Dependency Properties
 
+    public static readonly DependencyProperty IconProperty =
+        DependencyProperty.Register(nameof(Icon), typeof(IconEnum), typeof(WidgetControl), new PropertyMetadata(default(IconEnum)));
+
     public static readonly DependencyProperty TitleProperty =
         DependencyProperty.Register(nameof(Title), typeof(string), typeof(WidgetControl));
+
+    public static readonly DependencyProperty InfoProperty =
+        DependencyProperty.Register(nameof(Info), typeof(string), typeof(WidgetControl));
 
     public static readonly DependencyProperty IsExpandedProperty =
         DependencyProperty.Register(nameof(IsExpanded), typeof(bool), typeof(WidgetControl), new(true));
@@ -24,12 +31,30 @@ public class WidgetControl : ContentControl
     #region Eigenschaften
 
     /// <summary>
+    /// Repräsentiert das Symbol, das im Kopfbereich des Widgets angezeigt wird.
+    /// </summary>
+    public IconEnum Icon
+    {
+        get { return (IconEnum)GetValue(IconProperty); }
+        set { SetValue(IconProperty, value); }
+    }
+
+    /// <summary>
     /// Der Titel, der im Kopfbereich des Widgets angezeigt wird.
     /// </summary>
     public string Title
     {
         get => (string)GetValue(TitleProperty);
         set => SetValue(TitleProperty, value);
+    }
+
+    /// <summary>
+    /// Die Info, die im Kopfbereich des Widgets angezeigt wird.
+    /// </summary>
+    public string Info
+    {
+        get => (string)GetValue(InfoProperty);
+        set => SetValue(InfoProperty, value);
     }
 
     /// <summary>
