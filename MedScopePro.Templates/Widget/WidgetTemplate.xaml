@@ -18,6 +18,7 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.Column="0"
+                            x:Name="HeadPanel"
                             Orientation="Horizontal"
                             VerticalAlignment="Top">
 
@@ -80,6 +81,14 @@
 
             <Trigger Property="Info" Value="{x:Null}">
                 <Setter TargetName="Separator" Property="Visibility" Value="Collapsed"/>
+            </Trigger>
+
+            <Trigger Property="Title" Value="Live">
+                <Setter TargetName="HeadPanel" Property="Margin" Value="14,10,0,0"/>
+                <Setter TargetName="IconBackground" Property="Width" Value="10"/>
+                <Setter TargetName="IconBackground" Property="Height" Value="10"/>
+                <Setter TargetName="IconBackground" Property="Background" Value="#FF3A36"/>
+                <Setter TargetName="Title" Property="Foreground" Value="#FF3A36"/>
             </Trigger>
 
         </ControlTemplate.Triggers>
