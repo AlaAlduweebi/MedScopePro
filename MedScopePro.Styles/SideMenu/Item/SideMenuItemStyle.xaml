@@ -26,6 +26,7 @@
                             <!-- Icon -->
                             <icon:IconControl x:Name="Icon" 
                                               IconMaterial="{TemplateBinding Icon}"
+                                              IconStyle="Fill"
                                               Foreground="{TemplateBinding Foreground}"
                                               Height="32" Width="32"
                                               HorizontalAlignment="Center"

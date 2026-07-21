@@ -5,8 +5,9 @@
 
     <!-- WidgetTemplate -->
     <ControlTemplate x:Key="WidgetTemplate" TargetType="{x:Type widget:WidgetControl}">
-        <Border Background="White"
-                BorderThickness="0"
+        <Border x:Name="Border" 
+                Background="White"
+                BorderThickness="1"
                 CornerRadius="20"
                 Padding="10">
 
@@ -22,15 +23,17 @@
 
                     <!-- Icon Hintergrund -->
                     <Border Grid.Column="0"
+                            x:Name="IconBackground"
                             Background="#F6F6F6"
                             CornerRadius="40"
-                            Width="50" Height="50"
+                            Width="44" Height="44"
                             Visibility="Visible">
 
                         <!-- Icon -->
                         <icon:IconControl x:Name="Icon"
-						                  Height="18" Width="18"
+						                  Height="22" Width="22"
 						                  IconMaterial="{TemplateBinding Icon}"
+                                          IconStyle="Fill"
 						                  Foreground="{TemplateBinding Foreground}"/>
                     </Border>
 
@@ -39,11 +42,18 @@
                                 VerticalAlignment="Center">
 
                         <!-- Titel -->
-                        <TextBlock FontStyle="Italic" 
+                        <TextBlock x:Name="Title"
+                                   FontStyle="Italic" 
                                    Text="{TemplateBinding Title}"/>
 
+                        <!-- Separator -->
+                        <TextBlock x:Name="Separator"
+                                   Margin="10,0,10,0" 
+                                   FontStyle="Italic"
+                                   Text="•"/>
+                        
                         <!-- Info -->
-                        <TextBlock Margin="10,0,0,0" 
+                        <TextBlock x:Name="Info"
                                    FontStyle="Italic"
                                    Text="{TemplateBinding Info}"/>
 
@@ -56,5 +66,22 @@
                 
             </Grid>
         </Border>
+        <ControlTemplate.Triggers>
+            
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="Border" Property="BorderBrush" Value="#2978F5"/>
+                <Setter TargetName="IconBackground" Property="Background" Value="#2978F5"/>
+                <Setter TargetName="Icon" Property="IconStyle" Value="Outline"/>
+                <Setter TargetName="Icon" Property="Foreground" Value="White"/>
+                <Setter TargetName="Title" Property="Foreground" Value="#2978F5"/>
+                <Setter TargetName="Separator" Property="Foreground" Value="#2978F5"/>
+                <Setter TargetName="Info" Property="Foreground" Value="#2978F5"/>
+            </Trigger>
+
+            <Trigger Property="Info" Value="{x:Null}">
+                <Setter TargetName="Separator" Property="Visibility" Value="Collapsed"/>
+            </Trigger>
+
+        </ControlTemplate.Triggers>
     </ControlTemplate>
 </ResourceDictionary>
