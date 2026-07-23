@@ -18,7 +18,7 @@
 
                         <!-- Icon -->
                         <icon:IconControl x:Name="Icon"
-                                          Height="14" Width="14"
+                                          Height="18" Width="18"
                                           IconMaterial="{TemplateBinding Icon}"
                                           Foreground="{TemplateBinding Foreground}"/>
 
