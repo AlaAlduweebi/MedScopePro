@@ -1,12 +1,12 @@
 ﻿using MedScopePro.Controls._Elements.Button.Generic;
 using System.Windows;
 
-namespace MedScopePro.Controls.Workspace._Elements.Item._Elements.Button;
+namespace MedScopePro.Controls.Widget._Elements.Button;
 
 /// <summary>
-/// Benutzerdefinierter Button für das WorkspaceItem.
+/// Benutzerdefinierter Button für das Widget.
 /// </summary>
-public class WorkspaceItemButtonControl : ButtonControlGeneric<WorkspaceItemButtonEnum>
+public class WidgetButtonControl : ButtonControlGeneric<WidgetButtonEnum>
 {
     #region Methoden
 
@@ -18,8 +18,8 @@ public class WorkspaceItemButtonControl : ButtonControlGeneric<WorkspaceItemButt
     {
         switch (ButtonName)
         {
-            case WorkspaceItemButtonEnum.Close:
-                CloseWorkspaceItem();
+            case WidgetButtonEnum.Maximize:
+                ExecuteMaximize();
                 break;
 
             default:
@@ -28,10 +28,11 @@ public class WorkspaceItemButtonControl : ButtonControlGeneric<WorkspaceItemButt
     }
 
     /// <summary>
-    /// Schließt das WorkspaceItem.
+    /// Führt die Maximierungsaktion für das Widget aus.
     /// </summary>
-    public void CloseWorkspaceItem()
+    private void ExecuteMaximize()
     {
+
     }
 
     #endregion
