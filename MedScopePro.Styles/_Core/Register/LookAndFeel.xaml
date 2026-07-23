@@ -23,11 +23,14 @@
         <ResourceDictionary Source="/MedScopePro.Styles;component/_Elements/ContentControl/ContentControlStyle.xaml" />
         <ResourceDictionary Source="/MedScopePro.Styles;component/MainView/MainViewStyle.xaml" />
 
+        <!-- Widget -->
+        <ResourceDictionary Source="/MedScopePro.Styles;component/Widget/Button/WidgetButtonStyle.xaml" />
+        
         <!-- Workspace -->
         <ResourceDictionary Source="/MedScopePro.Styles;component/Workspace/Item/Button/WorkspaceItemButtonStyle.xaml" />
         <ResourceDictionary Source="/MedScopePro.Styles;component/Workspace/Item/WorkspaceItemStyle.xaml" />
         <ResourceDictionary Source="/MedScopePro.Styles;component/Workspace/WorkspaceStyle.xaml" />
-        
+
         <!-- SideMenu -->
         <ResourceDictionary Source="/MedScopePro.Styles;component/SideMenu/ToggleButton/SideMenuToggleButtonStyle.xaml" />
         <ResourceDictionary Source="/MedScopePro.Styles;component/SideMenu/Item/SideMenuItemStyle.xaml" />

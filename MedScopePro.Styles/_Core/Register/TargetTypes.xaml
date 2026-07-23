@@ -14,6 +14,7 @@
                     xmlns:textBox="clr-namespace:MedScopePro.Controls._Elements.TextBox;assembly=MedScopePro.Controls"
                     xmlns:toggleButton="clr-namespace:MedScopePro.Controls._Elements.ToggleButton;assembly=MedScopePro.Controls"
                     xmlns:icon="clr-namespace:MedScopePro.Controls.Icon;assembly=MedScopePro.Controls"
+                    xmlns:widgetButton="clr-namespace:MedScopePro.Controls.Widget._Elements.Button;assembly=MedScopePro.Controls"
                     xmlns:workspaceItemButton="clr-namespace:MedScopePro.Controls.Workspace._Elements.Item._Elements.Button;assembly=MedScopePro.Controls"
                     xmlns:workspaceItem="clr-namespace:MedScopePro.Controls.Workspace._Elements.Item;assembly=MedScopePro.Controls"
                     xmlns:workspace="clr-namespace:MedScopePro.Controls.Workspace;assembly=MedScopePro.Controls"
@@ -39,6 +40,9 @@
 
     <!-- Icon -->
     <Style TargetType="{x:Type icon:IconControl}" BasedOn="{StaticResource IconStyle}" />
+
+    <!-- Widget -->
+    <Style TargetType="{x:Type widgetButton:WidgetButtonControl}" BasedOn="{StaticResource WidgetButtonStyle}" />
 
     <!-- Workspace -->
     <Style TargetType="{x:Type workspaceItemButton:WorkspaceItemButtonControl}" BasedOn="{StaticResource WorkspaceItemButtonStyle}" />

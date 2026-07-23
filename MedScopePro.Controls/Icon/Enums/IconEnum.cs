@@ -30,6 +30,8 @@
         Assignment,
         Dashboard,
         Person,
-        Power
+        Power,
+        Fullscreen,
+        FullscreenExit
     }
 }

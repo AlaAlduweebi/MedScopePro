@@ -1,5 +1,6 @@
 ﻿using MedScopePro.Controls.Workspace._Elements.Item._Elements.Button;
 using MedScopePro.Controls._Elements.Button.Generic;
+using MedScopePro.Controls.Widget._Elements.Button;
 using MedScopePro.Controls.Icon.Enums;
 
 namespace MedScopePro.Controls._Elements.Button.Metadata;
@@ -23,6 +24,12 @@ public static class ButtonMetadata
     /// </summary>
     private static readonly Dictionary<Enum, ButtonMeta> Metadata = new()
     {
+        // Widget
+        [WidgetButtonEnum.Maximize] = new ButtonMeta(
+                icon: IconEnum.Fullscreen,
+                tooltip: "Groß anzeigen"
+            ),
+
         // Workspace
         [WorkspaceItemButtonEnum.Close] = new ButtonMeta(
                 icon: IconEnum.Cancel,
