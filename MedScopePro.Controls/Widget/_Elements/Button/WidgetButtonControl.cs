@@ -1,5 +1,5 @@
 ﻿using MedScopePro.Controls._Elements.Button.Generic;
-using System.Windows.Media;
+using MedScopePro.Controls._Core.Helpers;
 using System.Windows;
 
 namespace MedScopePro.Controls.Widget._Elements.Button;
@@ -33,26 +33,9 @@ public class WidgetButtonControl : ButtonControlGeneric<WidgetButtonEnum>
     /// </summary>
     private void ExecuteMaximize()
     {
-        var widget = FindAncestor<WidgetControl>(this);
+        var widget = ElementFinder.FindAncestor<WidgetControl>(this);
         widget?.RaiseMaximize();
     }
 
-    /// <summary>
-    /// Findet den ersten visuellen Parent des angegebenen Typs.
-    /// </summary>
-    public static T? FindAncestor<T>(DependencyObject child) where T : DependencyObject
-    {
-        DependencyObject parent = VisualTreeHelper.GetParent(child);
-
-        while (parent != null)
-        {
-            if (parent is T typedParent)
-                return typedParent;
-
-            parent = VisualTreeHelper.GetParent(parent);
-        }
-
-        return null;
-    }
     #endregion
 }

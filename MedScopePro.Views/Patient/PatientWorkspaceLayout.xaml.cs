@@ -1,4 +1,5 @@
-﻿using MedScopePro.Controls.Widget;
+﻿using MedScopePro.Controls._Core.Helpers;
+using MedScopePro.Controls.Widget;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -54,7 +55,7 @@ namespace MedScopePro.Views.Patient
         /// </summary>
         private void RegisterMaximizeEvents(DependencyObject parent)
         {
-            foreach (var widget in FindVisualChildren<WidgetControl>(parent))
+            foreach (var widget in ElementFinder.FindVisualChildren<WidgetControl>(parent))
             {
                 widget.MaximizeRequested += OnWidgetMaximizeRequested;
             }
@@ -103,28 +104,6 @@ namespace MedScopePro.Views.Patient
             _maximizedWidget?.SetMaximizeButtonVisibility(Visibility.Visible);
 
             _maximizedWidget = null;
-        }
-
-        /// <summary>
-        /// Findet alle visuellen Kind-Elemente des angegebenen Typs.
-        /// </summary>
-        public static IEnumerable<T> FindVisualChildren<T>(DependencyObject parent) where T : DependencyObject
-        {
-            if (parent == null)
-                yield break;
-
-            int count = VisualTreeHelper.GetChildrenCount(parent);
-
-            for (int i = 0; i < count; i++)
-            {
-                DependencyObject child = VisualTreeHelper.GetChild(parent, i);
-
-                if (child is T typedChild)
-                    yield return typedChild;
-
-                foreach (T descendant in FindVisualChildren<T>(child))
-                    yield return descendant;
-            }
         }
 
         #endregion
