@@ -67,7 +67,6 @@
 
                         </StackPanel>
                     </StackPanel>
-                   
 
                     <!-- MaximizeButton -->
                     <widgetButton:WidgetButtonControl

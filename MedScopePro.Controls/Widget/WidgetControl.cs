@@ -76,4 +76,35 @@ public class WidgetControl : ContentControl
     }
 
     #endregion
+
+    #region Events
+
+    /// <summary>
+    /// Wird ausgelöst, wenn das Widget maximiert werden soll.
+    /// </summary>
+    public event Action<WidgetControl>? MaximizeRequested;
+
+    #endregion
+
+    #region Methoden
+
+    /// <summary>
+    /// Löst das Maximize-Event für dieses Widget aus.
+    /// </summary>
+    internal void RaiseMaximize()
+    {
+        MaximizeRequested?.Invoke(this);
+    }
+
+    public void SetMaximizeButtonVisibility(Visibility visibility)
+    {
+        if (Template != null)
+        {
+            var btn = Template.FindName("MaximizeButton", this) as UIElement;
+            if (btn != null)
+                btn.Visibility = visibility;
+        }
+    }
+
+    #endregion
 }
