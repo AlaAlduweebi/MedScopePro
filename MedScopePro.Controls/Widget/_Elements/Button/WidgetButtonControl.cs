@@ -46,6 +46,8 @@ public class WidgetButtonControl : ButtonControlGeneric<WidgetButtonEnum>
     /// </summary>
     private void ExecuteRestore()
     {
+        var widget = ElementFinder.FindAncestor<WidgetControl>(this);
+        widget?.RaiseRestore();
     }
 
     #endregion

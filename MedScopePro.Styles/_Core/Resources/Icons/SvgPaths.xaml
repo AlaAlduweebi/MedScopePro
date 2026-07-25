@@ -123,7 +123,7 @@
         M144-144v-192h72v120h120v72H144Zm480 0v-72h120v-120h72v192H624ZM144-624v-192h192v72H216v120h-72Zm600 0v-120H624v-72h192v192h-72Z
     </Geometry>
 
-    <Geometry x:Key="FullscreenExitFillIconPath">
+    <Geometry x:Key="FullscreenExitIconPath">
         M264-144v-120H144v-72h192v192h-72Zm360 0v-192h192v72H696v120h-72ZM144-624v-72h120v-120h72v192H144Zm480 0v-192h72v120h120v72H624Z
     </Geometry>
     

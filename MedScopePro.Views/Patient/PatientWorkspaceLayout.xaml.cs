@@ -58,6 +58,7 @@ namespace MedScopePro.Views.Patient
             foreach (var widget in ElementFinder.FindVisualChildren<WidgetControl>(parent))
             {
                 widget.MaximizeRequested += OnWidgetMaximizeRequested;
+                widget.RestoreRequested += OnWidgetRestoreRequested;
             }
         }
 
@@ -77,7 +78,10 @@ namespace MedScopePro.Views.Patient
 
             OverlayContent.Child = widget;
             Overlay.Visibility = Visibility.Visible;
+
             widget.SetMaximizeButtonVisibility(Visibility.Collapsed);
+            widget.SetRestoreButtonVisibility(Visibility.Visible);
+            widget.IsMaximized = true;
         }
 
         /// <summary>
@@ -101,9 +105,20 @@ namespace MedScopePro.Views.Patient
 
             _originalParent.Children.Insert(_originalIndex, _maximizedWidget);
             Overlay.Visibility = Visibility.Collapsed;
-            _maximizedWidget?.SetMaximizeButtonVisibility(Visibility.Visible);
 
+            _maximizedWidget?.SetMaximizeButtonVisibility(Visibility.Visible);
+            _maximizedWidget?.SetRestoreButtonVisibility(Visibility.Collapsed);
+
+            _maximizedWidget.IsMaximized = false;
             _maximizedWidget = null;
+        }
+
+        /// <summary>
+        /// Handhabt das Restore-Event und setzt das Widget zurück.
+        /// </summary>
+        private void OnWidgetRestoreRequested(object? sender, EventArgs e)
+        {
+            RestoreWidget();
         }
 
         #endregion

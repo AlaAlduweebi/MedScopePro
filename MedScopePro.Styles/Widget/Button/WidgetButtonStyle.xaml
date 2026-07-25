@@ -25,6 +25,11 @@
                     </Border>
                     <ControlTemplate.Triggers>
 
+                        <Trigger Property="ButtonName" Value="Restore">
+                            <Setter TargetName="Icon" Property="Height" Value="20" />
+                            <Setter TargetName="Icon" Property="Width" Value="20" />
+                        </Trigger>
+
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Foreground" Value="#2978F5" />
                         </Trigger>

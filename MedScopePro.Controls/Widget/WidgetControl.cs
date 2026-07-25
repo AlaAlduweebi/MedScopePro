@@ -21,10 +21,13 @@ public class WidgetControl : ContentControl
         DependencyProperty.Register(nameof(Info), typeof(string), typeof(WidgetControl));
 
     public static readonly DependencyProperty IsExpandedProperty =
-        DependencyProperty.Register(nameof(IsExpanded), typeof(bool), typeof(WidgetControl), new(true));
+        DependencyProperty.Register(nameof(IsExpanded), typeof(bool), typeof(WidgetControl), new PropertyMetadata(true));
 
     public static readonly DependencyProperty IsCollapsibleProperty =
-        DependencyProperty.Register(nameof(IsCollapsible), typeof(bool), typeof(WidgetControl), new(true));
+        DependencyProperty.Register(nameof(IsCollapsible), typeof(bool), typeof(WidgetControl), new PropertyMetadata(true));
+
+    public static readonly DependencyProperty IsMaximizedProperty =
+        DependencyProperty.Register(nameof(IsMaximized), typeof(bool), typeof(WidgetControl), new PropertyMetadata(false));
 
     #endregion
 
@@ -75,6 +78,15 @@ public class WidgetControl : ContentControl
         set => SetValue(IsCollapsibleProperty, value);
     }
 
+    /// <summary>
+    /// Gibt an, ob das Widget aktuell maximiert ist.
+    /// </summary>
+    public bool IsMaximized
+    {
+        get => (bool)GetValue(IsMaximizedProperty);
+        set => SetValue(IsMaximizedProperty, value);
+    }
+
     #endregion
 
     #region Events
@@ -84,6 +96,11 @@ public class WidgetControl : ContentControl
     /// </summary>
     public event Action<WidgetControl>? MaximizeRequested;
 
+    /// <summary>
+    /// Wird ausgelöst, wenn das Widget zurückgesetzt werden soll.
+    /// </summary>
+    public event EventHandler? RestoreRequested;
+
     #endregion
 
     #region Methoden
@@ -91,11 +108,22 @@ public class WidgetControl : ContentControl
     /// <summary>
     /// Löst das Maximize-Event für dieses Widget aus.
     /// </summary>
-    internal void RaiseMaximize()
+    public void RaiseMaximize()
     {
         MaximizeRequested?.Invoke(this);
     }
 
+    /// <summary>
+    /// Löst das Restore-Event für dieses Widget aus.
+    /// </summary>
+    public void RaiseRestore()
+    {
+        RestoreRequested?.Invoke(this, EventArgs.Empty);
+    }
+
+    /// <summary>
+    /// Setzt die Sichtbarkeit des Maximize-Buttons.
+    /// </summary>
     public void SetMaximizeButtonVisibility(Visibility visibility)
     {
         if (Template != null)
@@ -104,6 +132,15 @@ public class WidgetControl : ContentControl
             if (btn != null)
                 btn.Visibility = visibility;
         }
+    }
+
+    /// <summary>
+    /// Setzt die Sichtbarkeit des Restore-Buttons.
+    /// </summary>
+    public void SetRestoreButtonVisibility(Visibility visibility)
+    {
+        var btn = Template.FindName("RestoreButton", this) as UIElement;
+        if (btn != null) btn.Visibility = visibility;
     }
 
     #endregion

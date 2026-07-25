@@ -104,6 +104,16 @@
                 <Setter TargetName="Info" Property="Foreground" Value="#2978F5"/>
             </Trigger>
 
+            <Trigger Property="IsMaximized" Value="True">
+                <Setter TargetName="Border" Property="BorderBrush" Value="White"/>
+                <Setter TargetName="IconBackground" Property="Background" Value="#2978F5"/>
+                <Setter TargetName="Icon" Property="IconStyle" Value="Outline"/>
+                <Setter TargetName="Icon" Property="Foreground" Value="White"/>
+                <Setter TargetName="Title" Property="Foreground" Value="#2978F5"/>
+                <Setter TargetName="Separator" Property="Foreground" Value="#2978F5"/>
+                <Setter TargetName="Info" Property="Foreground" Value="#2978F5"/>
+            </Trigger>
+
             <Trigger Property="Info" Value="{x:Null}">
                 <Setter TargetName="Separator" Property="Visibility" Value="Collapsed"/>
             </Trigger>

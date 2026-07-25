@@ -131,15 +131,33 @@
                 Margin="10"
                 MouseDown="OverlayMouseDown">
 
-            <Border x:Name="OverlayContent"
-                    Background="White"
-                    CornerRadius="20"
-                    Padding="20"
-                    Width="900"
-                    Height="600"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
-            </Border>
+            <Grid HorizontalAlignment="Center"
+			      VerticalAlignment="Center">
+
+                <!-- Schatten -->
+                <Border x:Name="ShadowBorder"
+				        Background="#F4F4F4"
+				        CornerRadius="20">
+
+                    <Border.Effect>
+                        <DropShadowEffect Color="Black"
+						                  Direction="0"
+						                  ShadowDepth="0"
+						                  BlurRadius="28"
+						                  Opacity="0.1" />
+                    </Border.Effect>
+                </Border>
+
+                <!-- Inhalt -->
+                <Border x:Name="OverlayContent"
+                        Background="White"
+                        CornerRadius="20"
+                        Width="900"
+                        Height="600"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                </Border>
+            </Grid>
         </Border>
 
     </Grid>
