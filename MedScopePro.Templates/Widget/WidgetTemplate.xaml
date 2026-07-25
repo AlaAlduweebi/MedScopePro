@@ -75,7 +75,16 @@
                         ButtonName="Maximize"
                         Margin="0,0,10,0"
                         HorizontalAlignment="Right"/>
-                    
+
+                    <!-- RestoreButton -->
+                    <widgetButton:WidgetButtonControl
+                        Grid.Column="1"
+                        x:Name="RestoreButton"
+                        ButtonName="Restore"
+                        Margin="0,0,10,0"
+                        HorizontalAlignment="Right"
+                        Visibility="Collapsed"/>
+
                 </Grid>
 
                 <!-- Inhalt -->

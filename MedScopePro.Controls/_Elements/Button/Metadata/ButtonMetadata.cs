@@ -29,6 +29,10 @@ public static class ButtonMetadata
                 icon: IconEnum.Fullscreen,
                 tooltip: "Groß anzeigen"
             ),
+        [WidgetButtonEnum.Restore] = new ButtonMeta(
+                icon: IconEnum.FullscreenExit,
+                tooltip: "Zurück zur normalen Ansicht"
+            ),
 
         // Workspace
         [WorkspaceItemButtonEnum.Close] = new ButtonMeta(

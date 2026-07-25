@@ -23,6 +23,10 @@ public class WidgetButtonControl : ButtonControlGeneric<WidgetButtonEnum>
                 ExecuteMaximize();
                 break;
 
+            case WidgetButtonEnum.Restore:
+                ExecuteRestore();
+                break;
+
             default:
                 throw new ArgumentOutOfRangeException();
         }
@@ -35,6 +39,13 @@ public class WidgetButtonControl : ButtonControlGeneric<WidgetButtonEnum>
     {
         var widget = ElementFinder.FindAncestor<WidgetControl>(this);
         widget?.RaiseMaximize();
+    }
+
+    /// <summary>
+    /// Führt die Wiederherstellungsaktion für das Widget aus.
+    /// </summary>
+    private void ExecuteRestore()
+    {
     }
 
     #endregion

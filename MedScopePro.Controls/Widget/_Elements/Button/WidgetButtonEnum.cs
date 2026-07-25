@@ -5,5 +5,6 @@
 /// </summary>
 public enum WidgetButtonEnum
 {
-    Maximize
+    Maximize,
+    Restore
 }
