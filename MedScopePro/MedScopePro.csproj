@@ -18,7 +18,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MedScopePro.Styles\MedScopePro.Styles.csproj" />
     <ProjectReference Include="..\MedScopePro.Templates\MedScopePro.Templates.csproj" />
-    <ProjectReference Include="..\MedScopePro.ViewModels\MedScopePro.ViewModels.csproj" />
     <ProjectReference Include="..\MedScopePro.Views\MedScopePro.Views.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using MedScopePro.Controls.SideMenu._Elements.Item;
+using CommunityToolkit.Mvvm.ComponentModel;
 using MedScopePro.ViewModels.Dashboard;
 using MedScopePro.ViewModels.Settings;
 using MedScopePro.ViewModels.Patient;
@@ -14,6 +15,7 @@ public class MainViewModel : ObservableObject
     #region Felder
 
     private object? _currentView;
+    private SideMenuItemControl? _selectedMenuItem;
 
     #endregion
 
@@ -26,6 +28,21 @@ public class MainViewModel : ObservableObject
     {
         get => _currentView;
         set => SetProperty(ref _currentView, value);
+    }
+
+    /// <summary>
+    /// Ausgewählter Menüeintrag.
+    /// </summary>
+    public SideMenuItemControl? SelectedMenuItem
+    {
+        get => _selectedMenuItem;
+        set
+        {
+            if (SetProperty(ref _selectedMenuItem, value) && value != null)
+            {
+                NavigateTo(value.MenuName);
+            }
+        }
     }
 
     #endregion

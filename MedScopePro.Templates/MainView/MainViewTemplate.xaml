@@ -27,7 +27,8 @@
                 <!-- SideMenu -->
                 <sideMenu:SideMenuControl 
                     x:Name="SideMenu"
-                    SelectedIndex="1"/>
+                    SelectedIndex="1"
+                    SelectedItem="{Binding SelectedMenuItem, Mode=OneWayToSource}"/>
 
             </Border>
         </Grid>

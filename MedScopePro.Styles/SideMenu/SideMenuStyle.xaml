@@ -48,7 +48,7 @@
                         <!-- TabContent -->
                         <ContentPresenter Grid.Column="1"
                                           Margin="0,20,0,0"
-                                          Content="{TemplateBinding SelectedContent}"/>
+                                          Content="{Binding CurrentView}"/>
 
                     </Grid>
                 </ControlTemplate>

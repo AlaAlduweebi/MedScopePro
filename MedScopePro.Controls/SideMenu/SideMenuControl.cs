@@ -1,10 +1,7 @@
 ﻿using MedScopePro.Controls.SideMenu._Elements.Item;
 using MedScopePro.Controls._Elements.TabControl;
-using MedScopePro.ViewModels.Dashboard;
-using MedScopePro.ViewModels.Settings;
-using MedScopePro.ViewModels.Patient;
-using MedScopePro.ViewModels.Reports;
 using MedScopePro.Controls.Icon.Enums;
+using System.Windows;
 
 namespace MedScopePro.Controls.SideMenu;
 
@@ -13,6 +10,28 @@ namespace MedScopePro.Controls.SideMenu;
 /// </summary>
 public class SideMenuControl : TabControl
 {
+    #region Dependency Properties
+
+    public static readonly DependencyProperty SelectedItemProperty =
+        DependencyProperty.Register(nameof(SelectedItem), typeof(SideMenuItemControl), typeof(SideMenuControl), new PropertyMetadata(null, OnSelectedItemChanged));
+
+    #endregion
+
+    #region Eigenschaften
+
+    /// <summary>
+    /// Ausgewähltes Element des Seitenmenüs.
+    /// </summary>
+    public new SideMenuItemControl SelectedItem
+    {
+        get => (SideMenuItemControl)GetValue(SelectedItemProperty);
+        set => SetValue(SelectedItemProperty, value);
+    }
+
+    #endregion
+
+    #region Methoden
+
     /// <summary>
     /// Initialisiert die Standard-Einträge des Seitenmenüs.
     /// </summary>
@@ -28,7 +47,6 @@ public class SideMenuControl : TabControl
             MenuName = SideMenuItemEnum.Dashboard,
             Icon = IconEnum.Dashboard,
             ToolTip = "Dashboard",
-            Content = new DashboardViewModel(),
         });
 
         Items.Add(new SideMenuItemControl
@@ -36,7 +54,6 @@ public class SideMenuControl : TabControl
             MenuName = SideMenuItemEnum.Patient,
             Icon = IconEnum.Person,
             ToolTip = "Patient",
-            Content = new PatientViewModel(),
         });
 
         Items.Add(new SideMenuItemControl
@@ -44,7 +61,6 @@ public class SideMenuControl : TabControl
             MenuName = SideMenuItemEnum.Reports,
             Icon = IconEnum.Assignment,
             ToolTip = "Berichte",
-            Content = new ReportsViewModel(),
         });
 
         Items.Add(new SideMenuItemControl
@@ -52,7 +68,21 @@ public class SideMenuControl : TabControl
             MenuName = SideMenuItemEnum.Settings,
             Icon = IconEnum.Settings,
             ToolTip = "Einstellungen",
-            Content = new SettingsViewModel(),
         });
+
+        SelectionChanged += (s, e) => SelectedItem = base.SelectedItem as SideMenuItemControl;
     }
+
+    /// <summary>
+    /// Wird aufgerufen, wenn sich das ausgewählte Element ändert.
+    /// </summary>
+    private static void OnSelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    {
+        if (d is SideMenuControl control)
+        {
+            control.SelectedItem = (SideMenuItemControl)e.NewValue;
+        }
+    }
+
+    #endregion
 }

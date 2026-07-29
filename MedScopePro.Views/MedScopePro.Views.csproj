@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MedScopePro.Controls\MedScopePro.Controls.csproj" />
+    <ProjectReference Include="..\MedScopePro.ViewModels\MedScopePro.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
